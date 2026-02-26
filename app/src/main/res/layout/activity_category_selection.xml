@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/ic_background_light"
+    tools:context=".Activity.CategorySelectionActivity">
+
+    <com.quickcoach.customs.CustomSubHeader
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/customHeader"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:layout_alignParentTop="true"
+        />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/rvCategorySelection"
+        android:layout_below="@+id/customHeader"
+        android:layout_above="@id/btnSignupNow"
+        android:layout_marginHorizontal="@dimen/_10sdp"
+        android:layout_marginTop="@dimen/_20sdp"/>
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btnSignupNow"
+        style="@style/ButtonParentStyle"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginHorizontal="@dimen/_10sdp"
+        android:layout_marginBottom="@dimen/_25sdp"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:text="@string/sign_up_now"
+        android:textStyle="bold"/>
+    
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/txtNoDataFound"
+        style="@style/Text12RegularWhiteStyle"
+        android:layout_centerInParent="true"
+        android:visibility="gone"
+        android:gravity="center"
+        android:text="@string/no_data_found"/>
+
+</RelativeLayout>

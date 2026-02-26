@@ -1,0 +1,461 @@
+<resources>
+    <string name="app_name">Quick Coach</string>
+
+    <!--For custom Image View and Web intents-->
+    <string name="choose_option">Choose Option</string>
+    <string name="no_browser_app_available">There is not any browser app available in your phone</string>
+
+
+    <!--    Welcome Screen-->
+    <string name="dummy_text">Lorem Ipsum is simply dummy text\n of the industry</string>
+    <string name="what_is_quick_coach"><u>What is Quick Coach?</u></string>
+
+    <string name="faq">\u0020 - \u0020<u>FAQ</u></string>
+    <string name="contact_us">\u0020 - \u0020<u>Contact Us</u></string>
+    <string name="contactus">Contact Us</string>
+    <string name="link_contact_us">Contact Us</string>
+    <string name="organize_event_details">Organize Event Details</string>
+
+    <!--            button Text -->
+    <string name="player">PLAYER</string>
+    <string name="player_s">Player</string>
+    <string name="playerinfo">PLAYER INFO</string>
+    <string name="coaches">COACHES</string>
+    <string name="coaches_info">COACH INFO</string>
+    <string name="login">Login</string>
+    <string name="sign_up">Sign Up</string>
+    <string name="or_continue_with">or continue with</string>
+
+    <!--profile screen-->
+    <string name="steve">Steve</string>
+    <string name="jordan">Jordan</string>
+    <string name="gmail">steavejordan@gmail.com</string>
+
+    <!--    sign Up Screen-->
+    <string name="sign_up_and_start_coaching">Sign Up and\nstart coaching</string>
+    <string name="first_name">First Name</string>
+    <string name="first_red">First Name<font color='#e35656'>*</font></string>
+    <string name="first">First Name*</string>
+    <string name="last_name">Last Name</string>
+    <string name="last_red">Last Name<font color='#e35656'>*</font></string>
+    <string name="last">Last Name*</string>
+    <string name="email">Email</string>
+    <string name="email_star_red">Email<font color='#e35656'>*</font></string>
+    <string name="email_star">Email*</string>
+    <string name="already_registered">Already registered?</string>
+    <string name="password">Password</string>
+    <string name="password_star">Password*</string>
+    <string name="not_register">Not registered?</string>
+    <string name="term_of_use">Term Of use</string>
+    <string name="privacy_notice">privacy notice</string>
+    <string name="by_signing_up_you_agree_to_our_team_of_use_and_privacy_notice">By signing up you agree to our Term Of use </string>
+    <string name="if_you_would_like_to_organize_an_event_through_QUICK_COACH_you_can_request_from_here">If you would like to organize an event through QUICK COACH, you can request from here !!</string>
+
+
+    <!--            button Text-->
+    <string name="sign_up_now">Sign Up Now</string>
+    <string name="save">Save</string>
+
+    <!--    login Screen-->
+    <string name="glad_to_meet_you_again">Glad to meet\nyou again!</string>
+    <string name="your_name">Your Name</string>
+    <string name="your_email">Your Email</string>
+    <string name="forgot_password">Forgot Password</string>
+
+    <string name="sign_in">Sign In</string>
+
+    <!--    Main Screen-->
+    <string name="type_coach_name">Search Coach</string>
+    <string name="type_player_name">Search Player</string>
+    <string name="dummy_name">Kosh Kawan</string>
+
+    <!--    subscribe coach button-->
+    <string name="subscribe_coach_from_web">Subscribe coach</string>
+    <string name="get_this_coach_advice">Get this coach advice!</string>
+    <string name="get_advice">Get advice</string>
+
+    <!--    Messages Screen-->
+    <string name="messages">Messages</string>
+    <string name="search">Search</string>
+    <string name="chat_list">CHAT LIST</string>
+
+    <!--    Activity Screen-->
+    <string name="activity">ACTIVITY</string>
+    <string name="type_event_sports_name">Type event , sports name</string>
+    <string name="apply_this_from_web">Apply</string>
+    <string name="in_progress">In Progress</string>
+
+
+    <!--    Forgot Password Screen-->
+    <string name="please_enter_your_registered_email_address_to_receive_new_password">
+        Please enter your registered email address\nto receive new password
+    </string>
+    <string name="submit">Submit</string>
+
+
+    <!--    Home Screen-->
+    <string name="home">HOME</string>
+    <string name="user_name">Steave Jorden</string>
+    <string name="ken">Ken</string>
+    // Ui changes
+    <string name="user_coach_name">Ken Kou Jaz</string>
+    <string name="your_coaches">Your Coaches</string>
+    <string name="your_Archive">Archived Coaches</string>
+
+
+    <!--    Player Level-->
+    <string name="player_level">PLAYER LEVEL</string>
+    <string name="your_level">Your Level</string>
+    <string name="just_started_.._lets_clear_each_item_to_boast_up">Just Started.Lets clear each item To boost up</string>
+    <string name="know_more_about_level"><u>Know More About Levels</u></string>
+    <string name="lets_Login.">Lets Login..</string>
+    <string name="verify_your_identify_by_your_id">Verify your Identify by your Id.</string>
+    <string name="fill_out_all_your_profile">Fill out all your profile</string>
+    <string name="get_your_bookmarked">Get your bookmarked</string>
+    <string name="post_your_message_on_quick_coach_sns">Post your message on QUICK COACH SNS.</string>
+    <string name="apply_and_join_an_event">Apply and join an event</string>
+
+
+    <!--    Level Info-->
+    <string name="level_info">LEVEL INFO</string>
+    <string name="bookmark_your_3_favorite_coaches">Bookmark your 3 favorite coaches</string>
+    <string name="choose_a_coach_and_send_your_first_message">Choose a coach and send your first message.</string>
+    <string name="send_your_video_to_ask_their_advise">Send your video to ask their advise</string>
+    <string name="keep_conversation_with_your_coach_for_3days">Keep conversation with your coach for 3days</string>
+
+    <!--setting string-->
+
+    <string name="settings">SETTINGS</string>
+    <string name="profile">Profile</string>
+    <string name="profiles">PROFILE</string>
+    <string name="notification">NOTIFICATION</string>
+    <string name="notifications">Notifications</string>
+    <string name="subscriptions">Subscriptions</string>
+    <string name="continue_with_begginers">Continue With</string>
+    <string name="logout">Logout</string>
+    <string name="lock_profile">Lock Profile</string>
+    <string name="dark_mode">Dark mode</string>
+
+    <!--suubscription-->
+
+    <string name="beginner">Beginner</string>
+    <string name="price_value">¥499</string>
+    <string name="pm">p/m</string>
+    <string name="billing_timing">Billing Timing:</string>
+    <string name="per_quick_advice">Per Quick Advice</string>
+
+    <string name="advised_period">Advice Period:</string>
+    <string name="shared_within_a_Team">Shared within a team:</string>
+    <string name="event_participation">Event Participation:</string>
+    <string name="free_trail_no">Free trail no:</string>
+    <string name="get_a_medal_from_your_coaches">Get a Medal from your coaches.</string>
+    <string name="keep_training_with_quick_coach_for_a_half_year">Keep training with QUICK COACH for a half year</string>
+    <string name="invite_one_your_friend_to_quick_coach">Invite one your friend to QUICK COACH.</string>
+    <string name="get_3_medals_from_your_coaches">Get 3 Medals from your coaches</string>
+    <string name="invite_3_your_friends_to_quick_coach">Invite 3 your friends to QUICK COACH</string>
+    <string name="keep_training_with_quick_coach_for_6_months">Keep training with QUICK COACH for 6 months.</string>
+
+    <!--    On Boarding workout from home  -->
+    <string name="get_advice_from_anywhere">Get Advice From Anywhere</string>
+    <string name="lorem_ipsum_dolor_sit_amet_dummy_text">Lorem ipsum dolor sit amet, consectetur ad plscing elit.\n Accursian, so llicitudin ornare cras ut ac. Neque amet.\n at gravida vel nibh gravida.</string>
+    <string name="next">Next</string>
+
+    <!--    On Boarding Choose us,choose right coach  -->
+    <string name="choose_us_Choose_right_coach">Choose us, Choose\nRight Coach.</string>
+
+    <!--Payment -->
+    <string name="payment">Payment</string>
+    <string name="card_number">Card Number</string>
+    <string name="enter_16_digit_card_number">Enter 16 digit card number</string>
+    <string name="valid_until">Valid Until</string>
+    <string name="mmyy">MM/YY</string>
+    <string name="cvv">CVV</string>
+    <string name="pasword">****</string>
+    <string name="card_holder_name">Card Holder Name</string>
+    <string name="enter_here">Enter here</string>
+    <string name="total">Total:</string>
+    <string name="paynow">Pay now</string>
+    <string name="cancel">Cancel</string>
+
+    <!--enter coaching details-->
+    <string name="enter_coaching_details">Enter coaching details</string>
+    <string name="what_is_your_expertise">What is your expertise</string>
+    <string name="what_is_your_expertise_star">What is your expertise*</string>
+    <string name="expertise">Expertise</string>
+    <string name="expertise_star">Expertise<font color='#e35656'>*</font></string>
+    <string name="school_name">School Name</string>
+    <string name="school_name_star_red">School Name</string>
+    <string name="organizations_where_you_belong">Organizations where you belong</string>
+    <string name="years_of_experience">Years Of Experience</string>
+    <string name="experience_Years_as_a_coach_star_red">Experience Years as a coach<font color='#e35656'>*</font></string>
+    <string name="experience_years_as_a_coach">Experience years as a coach</string>
+    <string name="coach_continue">Continue</string>
+    <string name="upload_id">Upload Id*</string>
+    <string name="team_plan_price">Team Plan Price</string>
+    <string name="years_of_experience_star_red">経験<font color='#e35656'>*</font></string>
+    <string name="enter_account_details">Enter account details</string>
+
+    <string name="timing">Timing</string>
+
+
+    <string name="events">Events</string>
+    <string name="events_name">Events Name*</string>
+    <string name="please_enter_event_name">Please enter event name</string>
+    <string name="please_enter_events_details">Please enter events details</string>
+    <string name="events_details">Events Details*</string>
+    <string name="event_info">EVENT INFO</string>
+    <string name="regular">Regular</string>
+    <string name="dream">Dream</string>
+    <string name="team">Team</string>
+
+    <string name="track_records_experiences"><![CDATA[Track Records & Experiences:]]></string>
+    <string name="a_winner_of_2020_japan_cup">A Winner of 2020 Japan Cup.</string>
+    <string name="a_team_coach_of_xxx_school_basket_nball_club_since_2021">A team coach of XXX school basket\nball club since 2021.</string>
+    <string name="available_time">Available Time:</string>
+    <string name="_10am_8pm_mon_fri">10am-8pm (Mon-Fri)</string>
+    <string name="coach_level">COACH LEVEL</string>
+    <string name="your_players">Your Players</string>
+    <string name="website"><u>website.</u></string>
+
+
+    <!--     Add String in CategorySelectionActivity title-->
+
+    <string name="which_sports_you_play">Which sports\nyou play?</string>
+    <string name="cricket">Cricket</string>
+    <string name="basketball">BasketBall</string>
+    <string name="tennis">Tennis</string>
+    <string name="chess">Chess</string>
+    <string name="football">FootBall</string>
+    <string name="swimming">Swimming</string>
+
+    <!--event activity-->
+    <string name="marathon_practice">2 Hr Marathon Practice</string>
+    <string name="haribostreet_meldo">Haribo Street, Meldo</string>
+    <string name="date">23,May-4:30 PM</string>
+    <string name="apply">Apply</string>
+    <string name="request_for_event"><b>Request For Event</b></string>
+    <string name="dummy_textlorem">Lorem lpsum is simply dummy text of the printing and typesetting industry. Lorem lpsum has been the industry\'s standard dummy text ever since the 1500s</string>
+
+    <string name="players">PLAYERS</string>
+    <string name="coach">Coach</string>
+    <string name="type_message_here">Type message here</string>
+    <string name="filter">Filter</string>
+    <string name="give_ratings">Give ratings</string>
+    <string name="select_category">Select Category</string>
+    <string name="select_date">Select Date</string>
+    <string name="reset">Reset</string>
+
+
+    <!--chat activity-->
+    <string name="ken_kou_jaz">Ken Kou Jaz</string>
+    <string name="slim_aarons">Slim Aarons</string>
+    <string name="btnContinue">Continue</string>
+    <string name="lorem_ipsum_is_simply_dummy_text_of_the_printing_and_typesetting_industry_lorem_ipsum_has_been_the_industry_standard">Lorem Ipsum is simply dummy text of\nthe printing and typesetting industry. Lorem Ipsum\nhas been the industry\s standard.</string>
+
+    <string name="checkInternet">Please check your internet connection</string>
+
+
+    <string name="please_enter_value">Please Enter %s</string>
+    <string name="please_enter_your_email">Please enter your email</string>
+    <string name="please_enter_first_name">Please enter first name</string>
+    <string name="please_enter_otp">Please enter otp</string>
+    <string name="please_enter_last_name">Please enter last name</string>
+    <string name="please_enter_valid_value">Please enter valid %s</string>
+    <string name="please_enter_primary_language">Please enter primary language</string>
+    <string name="Please_select_gender">Please select gender</string>
+    <string name="please_enter_valid_email">Please enter valid email</string>
+    <string name="please_enter_password">Please enter valid password</string>
+    <string name="select_any_one_sport">Select any one Sport</string>
+    <string name="password_limit">Password should be minimum 6 character  </string>
+    <string name="toast_cannot_retrieve_cropped_image">Cannot retrieve cropped image</string>
+    <string name="please_enter_coach_details">Please enter your detail</string>
+    <string name="please_enter_your_experience">Please enter your experience</string>
+    <string name="please_enter_organization_name_where_you_belong">Please enter organization name where you belong</string>
+    <string name="active_day_and_time"><u>Active Day and Time</u></string>
+    <string name="edit_available_timings"><u>Edit available timings</u></string>
+
+
+    <!--Bank Details Screen-->
+    <string name="edit_bank_account_details"><u>Edit bank account details</u></string>
+    <string name="account_holder_name">Account Holder Name</string>
+    <string name="bank_name">Bank Name</string>
+    <string name="account_number">Account Number</string>
+    <string name="routing_name">Routing Number</string>
+    <string name="account_type">Account Type</string>
+    <string name="individual">Individual</string>
+    <string name="corporate">Corporate</string>
+    <string name="bank_branch">Bank Branch</string>
+    <string name="checking">Checking</string>
+    <string name="savings">Savings</string>
+    <string name="edit_bank_details"><u>Edit bank details</u></string>
+    <string name="please_enter_account_holder_name">Please enter account holder name</string>
+    <string name="please_enter_account_number">Please enter account number</string>
+    <string name="please_enter_bank_name">Please enter bank name</string>
+    <string name="please_enter_bank_branch">Please enter bank branch</string>
+    <string name="please_enter_routing_number">Please enter routing number</string>
+    <string name="please_enter_account_detail">Please enter account detail</string>
+    <string name="please_enter_available_response_time">Please enter available response time</string>
+    <string name="please_select_verification_id">Please select verification id</string>
+    <string name="please_upload_your_document_id">Please upload your document for verification</string>
+    <string name="enter_available_timings">Enter available timings</string>
+
+    <!--player info-->
+    <string name="football_player"><b>Football Player</b></string>
+    <string name="kaizad_boroko">Kaizad Boroko</string>
+    <string name="total_taken_advice">Total Taken Advice</string>
+    <string name="primary_language">Select your language :</string>
+    <string name="primary_languag">Primary Language</string>
+    <string name="primary_language_star_red">Primary Language<font color='#e35656'>*</font></string>
+    <string name="primary_language_star">Primary Language*</string>
+    <string name="jersey_no">Jersey No.</string>
+    <string name="jersey">Jersey</string>
+    <string name="jersey_no_star">Jersey No<font color='#e35656'>*</font></string>
+    <string name="position_name">Position Name</string>
+    <string name="position_name_star">Position Name*</string>
+    <string name="game_played_by_player">Game Played By Player</string>
+    <string name="comments_by_coaches">Comments By Coaches</string>
+
+
+    <string name="you_can_select_only_3_sports">You can select only 3 sports</string>
+    <string name="please_enter_holder_name">Please enter holder name</string>
+    <string name="please_enter_experience">Please enter experience</string>
+    <string name="please_enter_plan_price">Please enter plan price</string>
+    <string name="no_data_found">No Data Found</string>
+    <string name="verification">Verification</string>
+    <string name="insert_your_code_here">Insert your code here:</string>
+    <string name="resend_again">Resend Again?</string>
+
+
+    <!--Timing Fragment -->
+    <string name="su">Su</string>
+    <string name="mo">Mo</string>
+    <string name="tu">Tu</string>
+    <string name="we">We</string>
+    <string name="th">Th</string>
+    <string name="fr">Fr</string>
+    <string name="sa">Sa</string>
+    <string name="start_time">Start time</string>
+    <string name="end_time">End time</string>Ma
+    <string name="hh_mm">HH/MM</string>
+    <string name="hour">Hour</string>
+    <string name="to">To</string>
+    <string name="add">Add</string>
+    <string name="sunday">Sunday</string>
+    <string name="monday">Monday</string>
+    <string name="tuesday">Tuesday</string>
+    <string name="wednesday">Wednesday</string>
+    <string name="thursday">Thursday</string>
+    <string name="friday">Friday</string>
+    <string name="saturday">Saturday</string>
+    <string name="is_already_exist">Is already exist</string>
+    <string name="please_enter_value_validation">Please Enter valid %s</string>
+    <string name="please_select_value_validation">Please Enter your %s</string>
+    <string name="please_enter_your_day">Please enter your day</string>
+    <string name="please_enter_your_start_time">Please enter your start time</string>
+    <string name="please_enter_your_end_time">Please enter your end time</string>
+    <string name="please_enter_valid_value_validation">Please Enter valid %s</string>
+    <string name="please_enter_valid_start_time">Please enter valid start time</string>
+    <string name="select_coach">Select Coach</string>
+    <string name="mobile_number">Mobile Number</string>
+    <string name="delete">Delete</string>
+    <string name="number_of_players_adviced_">Number of players advised:</string>
+    <string name="number_of_players_reported_coach_">Number of players reported coach:</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="organizer">Organizers</string>
+    <string name="chief_guest">Chief Guest</string>
+    <string name="benefit_you_will_learn_from_this_coach">Benefit you will learn from this coach:</string>
+    <string name="coach_experience">Coach experience:</string>
+    <string name="coach_school_name">Coach school name:</string>
+    <string name="reported_by_player">Reported By Player:</string>
+    <string name="speciality">Speciality</string>
+    <string name="subscription_plan">Please purchase subscription plan from our</string>
+    <string name="report_coach">Report Coach</string>
+    <string name="get_advise">Get Advise</string>
+    <string name="get_rating">Get Rating</string>
+    <string name="let_s_login">Let\'s Login</string>
+    <string name="verify_your_id">Verify your Identity by uploading your ID.</string>
+    <string name="get_you_bookmarked">Get you bookmarked.</string>
+    <string name="get_your_first_player">Get your first player.</string>
+    <string name="send_your_first_advice_message">Send your first advice message.</string>
+    <string name="send_your_first_advice_video">Send your first advice video.</string>
+    <string name="send_your_advice_video_5_times">Send your advice video 5 times.</string>
+    <string name="get_3_your_players">Get 3 your Players.</string>
+    <string name="keep_receiving_evaluation_points_4_75_and_more_for_2_months">Keep receiving evaluation points 4.75 and more for 2 months.</string>
+    <string name="get_5_your_players">Get 5 your Players.</string>
+    <string name="invite_your_friend_as_a_coach">Invite your friend as a coach.</string>
+    <string name="join_an_event">Join an event.</string>
+    <string name="keep_receiving_evaluation_points">Keep receiving evaluation points 4.75 and more for 6 months.</string>
+    <string name="you_re_diamond_coach">You\'re Diamond Coach!</string>
+    <string name="invite_1_friend_to_quick_coach">Invite 1 friend to QUICK COACH.</string>
+    <string name="invite_3_friends_to_quick_coach">Invite 3 friends to QUICK COACH.</string>
+    <string name="you_re_diamond_player">You\'re Diamond Player!</string>
+    <string name="reported_by_coach">Reported By Coach</string>
+    <string name="report_player">Report Player</string>
+    <string name="chinese">Chinese</string>
+    <string name="_20">/20</string>
+    <string name="_0">0</string>
+    <string name="select_option">Select option</string>
+    <string name="take_a_new_photo">Take a New Photo</string>
+    <string name="choose_from_your_photo_library">Choose from your photo library</string>
+    <string name="record_video">Record video</string>
+    <string name="choose_from_your_video_library">Choose from your video library</string>
+    <string name="_1">1</string>
+    <string name="_5">/5</string>
+    <string name="_3">3</string>
+    <string name="_10">10</string>
+    <string name="_14">/14</string>
+    <string name="time">3:00PM</string>
+    <string name="daniel_atkins">Daniel Atkins</string>
+    <string name="the_weather_will_be_perfect_for_the_sat">The Weather will be perfect for the sat..</string>
+    <string name="_9_hrs_ago">9 hrs ago</string>
+    <string name="sub_level">/5</string>
+    <string name="welcome_to_quick_coach">Welcome to QUICK COACH</string>
+    <string name="pg">PG</string>
+    <string name="next_mission">Next Mission</string>
+    <string name="let_s_get_started">Let\'s get started</string>
+    <string name="no">No.</string>
+    <string name="day">Day</string>
+    <string name="apply_this_event">Apply this event</string>
+    <string name="tag">tag</string>
+    <string name="event_title">Event title</string>
+    <string name="pick_up_event_on_this_week">Pick up event on this week</string>
+    <string name="latest">Latest</string>
+    <string name="loved">Loved</string>
+    <string name="check_your_level">Check your level</string>
+
+    <string name="new_messages">New Messages</string>
+
+    <string name="mission_list">Mission List</string>
+
+    <string name="player_info">PLAYER INFO</string>
+
+    <string name="name">Name</string>
+    <string name="position">Position</string>
+    <string name="please_purchase_subscription_plan_from_our">Please purchase subscription plan from our</string>
+    <string name="change_language">Change Language</string>
+    <string name="choose_your_language">Choose your Language</string>
+    <string name="give_rating">Give Ratings</string>
+    <string name="all_coaches">All Coaches</string>
+
+    <!--    <string name="please_purchase_subscription">Please Purchase Subscription</string>-->
+    <string name="Check_QUICK_COACH">Check QUICK COACH web site to get your coach advice</string>
+
+
+    <string name="english">English</string>
+    <string name="japanese">Japanese</string>
+
+    <string name="male">Male</string>
+    <string name="female">Female</string>
+    <string name="not_to_say">Not to say</string>
+    <string name="selected_gender">Select gender*</string>
+
+    <string name="have_referral_code">Have a referral code ?</string>
+    <string name="share_app">Share App</string>
+    <string name="enter_edit_available_timings">Edit available timings</string>
+
+    <string name="your_coach_is_not_one_person">Your Coach is \n Not One Person</string>
+
+    <string name="go_to_chat">Go to chat</string>
+
+</resources>

@@ -1,0 +1,594 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <!-- Base application theme. -->
+    <style name="Theme.QuickCoach" parent="Theme.MaterialComponents.Light.NoActionBar">
+    <!-- Primary brand color. -->
+    <item name="colorPrimary">@color/colorRed</item>
+    <item name="colorPrimaryVariant">@color/purple_700</item>
+    <item name="colorOnPrimary">@color/colorWhite</item>
+    <!-- Secondary brand color. -->
+    <item name="colorSecondary">@color/teal_200</item>
+    <item name="colorSecondaryVariant">@color/teal_700</item>
+    <item name="colorOnSecondary">@color/colorBackground</item>
+    <item name="android:colorAccent">@color/colorBackground</item>
+    <!-- Status bar color. -->
+    <item name="android:statusBarColor" tools:targetApi="l">@color/colorBackground</item>
+    <item name="bottomSheetDialogTheme">@style/AppBottomSheetDialogTheme</item>
+    </style>
+    <!-- Customize your theme here. -->
+
+    <style name="AppBottomSheetDialogTheme" parent="Theme.Design.Light.BottomSheetDialog">
+        <item name="bottomSheetStyle">@style/AppModalStyle</item>
+    </style>
+
+    <style name="AppModalStyle" parent="Widget.Design.BottomSheet.Modal">
+        <item name="android:background">@android:color/transparent</item>
+        <item name="android:layout_margin">@dimen/_15sdp</item>
+    </style>
+
+    <!-- Label Style-->
+    <style name="TextParentStyle">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:ellipsize">end</item>
+        <item name="android:textColor">@color/colorSubBackground</item>
+        <item name="android:textSize">@dimen/_12sdp</item>
+        <item name="android:gravity">start|center_vertical</item>
+        <item name="android:fontFamily">@font/font_shapiro_regular</item>
+        <item name="android:lineSpacingExtra">@dimen/_1sdp</item>
+        <item name="android:paddingStart">@dimen/_5sdp</item>
+        <item name="android:paddingEnd">@dimen/_5sdp</item>
+        <item name="android:paddingTop">@dimen/_5sdp</item>
+        <item name="android:paddingBottom">@dimen/_5sdp</item>
+    </style>
+
+
+    <!-- Edit Text Style-->
+    <style name="EditTextParentStyle" parent="TextParentStyle">
+        <item name="android:background">@drawable/dr_edit_text_bg</item>
+        <item name="android:textSize">@dimen/_10sdp</item>
+        <item name="android:textCursorDrawable">@null</item>
+        <item name="android:paddingTop">@dimen/_14sdp</item>
+        <item name="android:paddingBottom">@dimen/_14sdp</item>
+        <item name="android:layout_marginBottom">@dimen/_15sdp</item>
+        <item name="android:paddingStart">@dimen/_10sdp</item>
+        <item name="android:paddingEnd">@dimen/_10sdp</item>
+        <item name="android:textColorHint">@color/colorEdtHint</item>
+        <item name="android:textColor">@color/colorWhite</item>
+    </style>
+
+
+    <!-- Button Style-->
+    <style name="ButtonParentStyle" parent="TextParentStyle">
+        <item name="android:background">@drawable/dr_btn_red</item>
+        <item name="android:gravity">center</item>
+        <item name="textAllCaps">false</item>
+        <item name="android:textColor">@color/colorSubBackground</item>
+        <item name="android:paddingTop">@dimen/_8sdp</item>
+        <item name="android:paddingBottom">@dimen/_8sdp</item>
+        <item name="android:paddingStart">@dimen/_10sdp</item>
+        <item name="android:paddingEnd">@dimen/_10sdp</item>
+        <item name="android:fontFamily">@font/font_shapiro_regular</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="android:textSize">@dimen/_13sdp</item>
+    </style>
+
+    <!-- Small Button Style-->
+    <style name="SmallButtonParentStyle" parent="TextParentStyle">
+        <item name="android:background">@drawable/dr_btn_red</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textColor">@color/colorSubBackground</item>
+        <item name="android:paddingTop">@dimen/_5sdp</item>
+        <item name="android:paddingBottom">@dimen/_5sdp</item>
+        <item name="android:paddingStart">@dimen/_5sdp</item>
+        <item name="android:paddingEnd">@dimen/_5sdp</item>
+        <item name="android:fontFamily">@font/font_shapiro_regular</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="android:textSize">@dimen/_8sdp</item>
+    </style>
+
+    <!-- Small Gray Button Style-->
+    <style name="SmallGrayButtonParentStyle" parent="TextParentStyle">
+        <item name="android:background">@drawable/dr_btn_gray</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textColor">@color/colorSubBackground</item>
+        <item name="android:paddingTop">@dimen/_5sdp</item>
+        <item name="android:paddingBottom">@dimen/_5sdp</item>
+        <item name="android:paddingStart">@dimen/_5sdp</item>
+        <item name="android:paddingEnd">@dimen/_5sdp</item>
+        <item name="android:fontFamily">@font/font_shapiro_regular</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="android:textSize">@dimen/_8sdp</item>
+    </style>
+
+    <!-- Small Black Button Style-->
+    <style name="SmallBlackButtonParentStyle" parent="TextParentStyle">
+        <item name="android:background">@drawable/dr_bg_black</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textColor">@color/colorSubBackground</item>
+        <item name="android:paddingTop">@dimen/_5sdp</item>
+        <item name="android:paddingBottom">@dimen/_5sdp</item>
+        <item name="android:paddingStart">@dimen/_5sdp</item>
+        <item name="android:paddingEnd">@dimen/_5sdp</item>
+        <item name="android:fontFamily">@font/font_shapiro_regular</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="android:textSize">@dimen/_8sdp</item>
+    </style>
+
+    ratingBar style
+
+    <style name="RatingBarStyle" parent="@android:style/Widget.Holo.RatingBar">
+        <item name="android:progressDrawable">@drawable/dr_rating_small_star</item>
+        <item name="android:maxHeight">@dimen/_30sdp</item>
+        <item name="android:minHeight">@dimen/_10sdp</item>
+        <item name="android:numStars">5</item>
+        <item name="colorControlNormal">@color/colorRed</item>
+        <item name="colorControlActivated">@color/colorGray</item>
+    </style>
+
+
+    <!--CAPSULE BACKGROUND STYLE -->
+    <style name="CapsuleRedBackground" parent="TextParentStyle">
+
+        <item name="android:background">@drawable/dr_red_round_background</item>
+        <item name="android:gravity">center</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:textColor">@color/colorSubBackground</item>
+        <item name="android:paddingTop">@dimen/_5sdp</item>
+        <item name="android:paddingBottom">@dimen/_5sdp</item>
+        <item name="android:paddingStart">@dimen/_5sdp</item>
+        <item name="android:paddingEnd">@dimen/_5sdp</item>
+        <item name="android:fontFamily">@font/font_shapiro_regular</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="android:textSize">@dimen/_8sdp</item>
+    </style>
+
+    <style name="CapsuleBackground" parent="TextParentStyle">
+
+        <item name="android:background">@drawable/dr_gray_round_bg</item>
+        <item name="android:gravity">center</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:textColor">#FFFFFF</item>
+        <item name="android:paddingTop">@dimen/_5sdp</item>
+        <item name="android:paddingBottom">@dimen/_5sdp</item>
+        <item name="android:paddingStart">@dimen/_5sdp</item>
+        <item name="android:paddingEnd">@dimen/_5sdp</item>
+        <item name="android:fontFamily">@font/font_shapiro_regular</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="android:textSize">@dimen/_8sdp</item>
+    </style>
+
+
+    <!-- Red Border Button Style-->
+    <style name="RedBorderButtonStyle" parent="ButtonParentStyle">
+        <item name="android:background">@drawable/dr_btn_red_border</item>
+        <item name="android:textColor">@color/colorRed</item>
+    </style>
+
+
+    <!-- Regular(White)-->
+    <style name="Text35RegularWhiteStyle" parent="TextParentStyle">
+        <item name="android:textSize">@dimen/_28sdp</item>
+        <item name="android:fontFamily">@font/font_shapiro_heavy</item>
+        <item name="android:textColor">@color/colorWhite</item>
+        <item name="android:singleLine">false</item>
+    </style>
+
+    <style name="Text18RegularWhiteStyle" parent="TextParentStyle">
+        <item name="android:textSize">@dimen/_18sdp</item>
+        <item name="android:fontFamily">@font/font_shapiro_regular</item>
+        <item name="android:textColor">#121212</item>
+    </style>
+
+    <style name="Text18EditRegularWhiteStyle" parent="TextParentStyle">
+        <item name="android:textSize">@dimen/_18sdp</item>
+        <item name="android:fontFamily">@font/font_shapiro_regular</item>
+        <item name="android:textColor">#FFFFFF</item>
+    </style>
+
+    <style name="Text16RegularWhiteStyle" parent="Text18RegularWhiteStyle">
+        <item name="android:textSize">@dimen/_16sdp</item>
+    </style>
+
+    <style name="Text14RegularWhiteStyle" parent="Text18RegularWhiteStyle">
+        <item name="android:textSize">@dimen/_14sdp</item>
+    </style>
+
+    <style name="Text12RegularWhiteStyle" parent="Text18RegularWhiteStyle">
+        <item name="android:textSize">@dimen/_12sdp</item>
+    </style>
+
+    <style name="Text11RegularWhiteStyle" parent="Text18RegularWhiteStyle">
+        <item name="android:textSize">@dimen/_11sdp</item>
+    </style>
+
+    <style name="Text10RegularWhiteStyle" parent="Text18RegularWhiteStyle">
+        <item name="android:textSize">@dimen/_10sdp</item>
+    </style>
+
+    <style name="Text9RegularWhiteStyle" parent="Text18RegularWhiteStyle">
+        <item name="android:textSize">@dimen/_9sdp</item>
+    </style>
+
+    <style name="Text8RegularWhiteStyle" parent="Text18RegularWhiteStyle">
+        <item name="android:textSize">@dimen/_8sdp</item>
+    </style>
+    <style name="Text8RegularGrayLableStyle" parent="Text18RegularWhiteStyle">
+        <item name="android:textSize">@dimen/_8sdp</item>
+        <item name="android:textColor">@color/colorGrayText</item>
+    </style>
+
+    <style name="Text8RegularOffWhiteStyle" parent="Text8RegularWhiteStyle">
+        <item name="android:textColor">@color/colorOffWhite</item>
+    </style>
+
+    <!--    Bold(Black)-->
+    <style name="Text26BoldBlackStyle" parent="TextParentStyle">
+        <item name="android:textSize">@dimen/_26sdp</item>
+        <item name="android:fontFamily">@font/font_shapiro_heavy</item>
+        <item name="android:textColor">#121212</item>
+    </style>
+
+    <!-- Bold(White)-->
+    <style name="Text26BoldWhiteStyle" parent="TextParentStyle">
+        <item name="android:textSize">@dimen/_26sdp</item>
+        <item name="android:fontFamily">@font/font_shapiro_heavy</item>
+        <item name="android:textColor">@color/colorWhite</item>
+    </style>
+
+    <style name="Text24BoldWhiteStyle" parent="Text26BoldWhiteStyle">
+        <item name="android:textSize">@dimen/_24sdp</item>
+    </style>
+
+    <style name="Text22BoldWhiteStyle" parent="Text26BoldWhiteStyle">
+        <item name="android:textSize">@dimen/_22sdp</item>
+    </style>
+
+    <style name="Text20BoldWhiteStyle" parent="Text26BoldWhiteStyle">
+        <item name="android:textSize">@dimen/_20sdp</item>
+    </style>
+
+    <style name="Text18BoldWhiteStyle" parent="Text26BoldWhiteStyle">
+        <item name="android:textSize">@dimen/_18sdp</item>
+    </style>
+
+    <style name="Text16BoldWhiteStyle" parent="Text26BoldWhiteStyle">
+        <item name="android:textSize">@dimen/_16sdp</item>
+    </style>
+
+    <style name="Text14BoldWhiteStyle" parent="Text26BoldWhiteStyle">
+        <item name="android:textSize">@dimen/_14sdp</item>
+    </style>
+
+    <style name="Text12BoldWhiteStyle" parent="Text26BoldWhiteStyle">
+        <item name="android:textSize">@dimen/_12sdp</item>
+    </style>
+
+    <style name="Text10BoldWhiteStyle" parent="Text26BoldWhiteStyle">
+        <item name="android:textSize">@dimen/_10sdp</item>
+    </style>
+
+    <style name="Text9BoldWhiteStyle" parent="Text26BoldWhiteStyle">
+        <item name="android:textSize">@dimen/_9sdp</item>
+    </style>
+
+    <style name="Text8BoldWhiteStyle" parent="Text26BoldWhiteStyle">
+        <item name="android:textSize">@dimen/_8sdp</item>
+    </style>
+
+    <!--    Bold(Black)-->
+    <style name="Text14BoldBlackStyle" parent="Text26BoldBlackStyle">
+        <item name="android:textSize">@dimen/_14sdp</item>
+    </style>
+    <style name="Text10BoldBlackStyle" parent="Text26BoldBlackStyle">
+        <item name="android:textSize">@dimen/_10sdp</item>
+    </style>
+
+    <!-- Regular(Red)-->
+    <style name="Text18RegularRedStyle" parent="TextParentStyle">
+        <item name="android:textSize">@dimen/_18sdp</item>
+        <item name="android:fontFamily">@font/font_shapiro_regular</item>
+        <item name="android:textColor">@color/colorRed</item>
+    </style>
+
+    <style name="Text16RegularRedStyle" parent="Text18RegularRedStyle">
+        <item name="android:textSize">@dimen/_16sdp</item>
+    </style>
+
+    <style name="Text14RegularRedStyle" parent="Text18RegularRedStyle">
+        <item name="android:textSize">@dimen/_14sdp</item>
+    </style>
+
+    <style name="Text13RegularRedStyle" parent="Text18RegularRedStyle">
+        <item name="android:textSize">@dimen/_13sdp</item>
+    </style>
+
+    <style name="Text12RegularRedStyle" parent="Text18RegularRedStyle">
+        <item name="android:textSize">@dimen/_12sdp</item>
+    </style>
+
+    <style name="Text11RegularRedStyle" parent="Text18RegularRedStyle">
+        <item name="android:textSize">@dimen/_11sdp</item>
+    </style>
+
+    <style name="Text10RegularRedStyle" parent="Text18RegularRedStyle">
+        <item name="android:textSize">@dimen/_10sdp</item>
+    </style>
+
+    <style name="Text9RegularRedStyle" parent="Text18RegularRedStyle">
+        <item name="android:textSize">@dimen/_9sdp</item>
+    </style>
+
+    <style name="Text8RegularRedStyle" parent="Text18RegularRedStyle">
+        <item name="android:textSize">@dimen/_8sdp</item>
+    </style>
+
+
+    <!-- Bold(Red)-->
+    <style name="Text26BoldRedStyle" parent="TextParentStyle">
+        <item name="android:textSize">@dimen/_26sdp</item>
+        <item name="android:fontFamily">@font/font_shapiro_heavy</item>
+        <item name="android:textColor">@color/colorRed</item>
+    </style>
+
+    <style name="Text24BoldRedStyle" parent="Text26BoldRedStyle">
+        <item name="android:textSize">@dimen/_24sdp</item>
+    </style>
+
+    <style name="Text22BoldRedStyle" parent="Text26BoldRedStyle">
+        <item name="android:textSize">@dimen/_22sdp</item>
+    </style>
+
+    <style name="Text20BoldRedStyle" parent="Text26BoldRedStyle">
+        <item name="android:textSize">@dimen/_20sdp</item>
+    </style>
+
+    <style name="Text18BoldRedStyle" parent="Text26BoldRedStyle">
+        <item name="android:textSize">@dimen/_18sdp</item>
+    </style>
+
+    <style name="Text16BoldRedStyle" parent="Text26BoldRedStyle">
+        <item name="android:textSize">@dimen/_16sdp</item>
+    </style>
+
+    <style name="Text14BoldRedStyle" parent="Text26BoldRedStyle">
+        <item name="android:textSize">@dimen/_14sdp</item>
+    </style>
+
+    <style name="Text12BoldRedStyle" parent="Text26BoldRedStyle">
+        <item name="android:textSize">@dimen/_12sdp</item>
+    </style>
+
+    <style name="Text11BoldRedStyle" parent="Text26BoldRedStyle">
+        <item name="android:textSize">@dimen/_11sdp</item>
+    </style>
+
+    <style name="Text10BoldRedStyle" parent="Text26BoldRedStyle">
+        <item name="android:textSize">@dimen/_10sdp</item>
+    </style>
+
+    <style name="Text9BoldRedStyle" parent="Text26BoldRedStyle">
+        <item name="android:textSize">@dimen/_9sdp</item>
+    </style>
+
+    <style name="Text8BoldRedStyle" parent="Text26BoldRedStyle">
+        <item name="android:textSize">@dimen/_8sdp</item>
+    </style>
+
+
+    <!-- Regular(Blue)-->
+    <style name="Text18RegularBlueStyle" parent="TextParentStyle">
+        <item name="android:textSize">@dimen/_18sdp</item>
+        <item name="android:fontFamily">@font/font_shapiro_regular</item>
+        <item name="android:textColor">@color/colorBlue</item>
+    </style>
+
+    <style name="Text16RegularBlueStyle" parent="Text18RegularBlueStyle">
+        <item name="android:textSize">@dimen/_16sdp</item>
+    </style>
+
+    <style name="Text14RegularBlueStyle" parent="Text18RegularBlueStyle">
+        <item name="android:textSize">@dimen/_14sdp</item>
+    </style>
+
+    <style name="Text12RegularBlueStyle" parent="Text18RegularBlueStyle">
+        <item name="android:textSize">@dimen/_12sdp</item>
+    </style>
+
+    <style name="Text10RegularBlueStyle" parent="Text18RegularBlueStyle">
+        <item name="android:textSize">@dimen/_10sdp</item>
+    </style>
+
+    <style name="Text9RegularBlueStyle" parent="Text18RegularBlueStyle">
+        <item name="android:textSize">@dimen/_9sdp</item>
+    </style>
+
+    <style name="Text8RegularBlueStyle" parent="Text18RegularBlueStyle">
+        <item name="android:textSize">@dimen/_8sdp</item>
+    </style>
+
+
+    <!-- Bold(Blue)-->
+    <style name="Text26BoldBlueStyle" parent="TextParentStyle">
+        <item name="android:textSize">@dimen/_26sdp</item>
+        <item name="android:fontFamily">@font/font_shapiro_heavy</item>
+        <item name="android:textColor">@color/colorBlue</item>
+    </style>
+
+    <style name="Text24BoldBlueStyle" parent="Text26BoldBlueStyle">
+        <item name="android:textSize">@dimen/_24sdp</item>
+    </style>
+
+    <style name="Text22BoldBlueStyle" parent="Text26BoldBlueStyle">
+        <item name="android:textSize">@dimen/_22sdp</item>
+    </style>
+
+    <style name="Text20BoldBlueStyle" parent="Text26BoldBlueStyle">
+        <item name="android:textSize">@dimen/_20sdp</item>
+    </style>
+
+    <style name="Text18BoldBlueStyle" parent="Text26BoldBlueStyle">
+        <item name="android:textSize">@dimen/_18sdp</item>
+    </style>
+
+    <style name="Text16BoldBlueStyle" parent="Text26BoldBlueStyle">
+        <item name="android:textSize">@dimen/_16sdp</item>
+    </style>
+
+    <style name="Text14BoldBlueStyle" parent="Text26BoldBlueStyle">
+        <item name="android:textSize">@dimen/_14sdp</item>
+    </style>
+
+    <style name="Text12BoldBlueStyle" parent="Text26BoldBlueStyle">
+        <item name="android:textSize">@dimen/_12sdp</item>
+    </style>
+
+    <style name="Text10BoldBlueStyle" parent="Text26BoldBlueStyle">
+        <item name="android:textSize">@dimen/_10sdp</item>
+    </style>
+
+    <style name="Text9BoldBlueStyle" parent="Text26BoldBlueStyle">
+        <item name="android:textSize">@dimen/_9sdp</item>
+    </style>
+
+    <style name="Text8BoldBlueStyle" parent="Text26BoldBlueStyle">
+        <item name="android:textSize">@dimen/_8sdp</item>
+    </style>
+
+
+    <!-- Regular(Gray)-->
+    <style name="Text18RegularGrayStyle" parent="TextParentStyle">
+        <item name="android:textSize">@dimen/_18sdp</item>
+        <item name="android:fontFamily">@font/font_shapiro_regular</item>
+        <item name="android:textColor">@color/colorGray</item>
+    </style>
+
+    <style name="Text16RegularGrayStyle" parent="Text18RegularGrayStyle">
+        <item name="android:textSize">@dimen/_16sdp</item>
+    </style>
+
+    <style name="Text14RegularGrayStyle" parent="Text18RegularGrayStyle">
+        <item name="android:textSize">@dimen/_14sdp</item>
+    </style>
+
+    <style name="Text12RegularGrayStyle" parent="Text18RegularGrayStyle">
+        <item name="android:textSize">@dimen/_10sdp</item>
+    </style>
+
+    <style name="Text11RegularGrayStyle" parent="Text18RegularGrayStyle">
+        <item name="android:textSize">@dimen/_11sdp</item>
+    </style>
+
+    <style name="Text10RegularGrayStyle" parent="Text18RegularGrayStyle">
+        <item name="android:textSize">@dimen/_10sdp</item>
+    </style>
+
+    <style name="Text9RegularGrayStyle" parent="Text18RegularGrayStyle">
+        <item name="android:textSize">@dimen/_9sdp</item>
+    </style>
+
+    <style name="Text8RegularGrayStyle" parent="Text18RegularGrayStyle">
+        <item name="android:textSize">@dimen/_8sdp</item>
+    </style>
+
+
+    <!-- Regular(LightBlue)-->
+    <style name="Text18RegularLightBlueStyle" parent="TextParentStyle">
+        <item name="android:textSize">@dimen/_18sdp</item>
+        <item name="android:fontFamily">@font/font_shapiro_regular</item>
+        <item name="android:textColor">@color/colorBlue</item>
+    </style>
+
+    <style name="Text16RegularLightBlueStyle" parent="Text18RegularLightBlueStyle">
+        <item name="android:textSize">@dimen/_16sdp</item>
+    </style>
+
+    <style name="Text14RegularLightBlueStyle" parent="Text18RegularLightBlueStyle">
+        <item name="android:textSize">@dimen/_14sdp</item>
+    </style>
+
+    <style name="Text12RegularLightBlueStyle" parent="Text18RegularLightBlueStyle">
+        <item name="android:textSize">@dimen/_12sdp</item>
+    </style>
+
+    <style name="Text10RegularLightBlueStyle" parent="Text18RegularLightBlueStyle">
+        <item name="android:textSize">@dimen/_10sdp</item>
+    </style>
+
+    <style name="Text9RegularLightBlueStyle" parent="Text18RegularLightBlueStyle">
+        <item name="android:textSize">@dimen/_9sdp</item>
+    </style>
+
+    <style name="Text8RegularLightBlueStyle" parent="Text18RegularLightBlueStyle">
+        <item name="android:textSize">@dimen/_8sdp</item>
+    </style>
+
+
+    <style name="ButtonStyle_16px" parent="Widget.MaterialComponents.Button.TextButton">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/_45sdp</item>
+        <item name="shapeAppearance">@style/ShapeAppearance</item>
+        <item name="android:backgroundTint">@color/colorRed</item>
+        <item name="android:textColor">@color/colorSubBackground</item>
+        <item name="android:fontFamily">@font/font_shapiro_regular</item>
+        <item name="android:textSize">@dimen/_13sdp</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="android:gravity">center</item>
+        <item name="android:singleLine">true</item>
+
+    </style>
+
+    <!-- Spinner Style-->
+    <style name="SpinnerBGStyle" parent="Text9RegularWhiteStyle">
+        <item name="android:background">@null</item>
+        <item name="android:overlapAnchor">false</item>
+        <item name="android:popupBackground">@color/colorWhite</item>
+        <item name="android:paddingStart">@dimen/_5sdp</item>
+        <item name="android:paddingEnd"> @dimen/_5sdp</item>
+        <item name="android:paddingBottom">@dimen/_5sdp</item>
+        <item name="android:paddingTop">@dimen/_5sdp</item>
+        <item name="android:spinnerMode">dropdown</item>
+    </style>
+
+    <style name="ButtonStyle_14px" parent="Widget.MaterialComponents.Button.TextButton">
+        <item name="android:layout_width">@dimen/_120sdp</item>
+        <item name="android:layout_height">@dimen/_40sdp</item>
+        <item name="shapeAppearance">@style/ShapeAppearance</item>
+        <item name="android:backgroundTint">@color/colorOrange</item>
+        <item name="android:textColor">@color/colorSubBackground</item>
+        <item name="android:fontFamily">@font/font_shapiro_regular</item>
+        <item name="android:textSize">@dimen/_14sdp</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="android:gravity">center</item>
+        <item name="android:singleLine">true</item>
+    </style>
+
+    <style name="ShapeAppearance">
+        <item name="cornerFamilyTopLeft">rounded</item>
+        <item name="cornerFamilyBottomLeft">rounded</item>
+        <item name="cornerFamilyTopRight">rounded</item>
+        <item name="cornerFamilyBottomRight">rounded</item>
+        <item name="cornerSize">@dimen/_8sdp</item>
+        <item name="cornerRadius">@dimen/_8sdp</item>
+    </style>
+
+    <!-- Horizontal View  Style-->
+    <style name="HorizontalViewStyle">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">0.9dp</item>
+        <item name="android:background">@color/colorView</item>
+    </style>
+
+
+
+
+
+    <!--    <string-array name="Gender">-->
+
+    <!--        <item>Male</item>-->
+    <!--        <item>Female</item>-->
+
+    <!--    </string-array>-->
+
+</resources>

@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".fragments.CoachFragment">
+
+    <RelativeLayout
+        android:id="@+id/rlTop"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="@dimen/_10sdp"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:layout_marginBottom="@dimen/_10sdp"
+        android:orientation="vertical">
+
+        <androidx.appcompat.widget.AppCompatEditText
+            android:id="@+id/edtSearch"
+            style="@style/Text12RegularWhiteStyle"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_40sdp"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="@dimen/_5sdp"
+            android:layout_toStartOf="@id/btnSearch"
+            android:background="@color/colorEdtBg"
+            android:hint="@string/type_event_sports_name"
+            android:imeOptions="actionDone"
+            android:textColor="@color/colorSubBackground"
+            android:textColorHint="@color/colorSubBackground"  />
+        
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/btnSearch"
+            android:layout_width="@dimen/_40sdp"
+            android:layout_height="@dimen/_40sdp"
+            android:src="@drawable/ic_search_bg"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="@dimen/_5sdp" />
+
+    </RelativeLayout>
+    
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/lblNoData"
+        style="@style/Text16BoldWhiteStyle"
+        android:layout_width="wrap_content"
+        android:layout_centerInParent="true"
+        android:text="@string/no_data_found"
+        android:visibility="gone" />
+
+        <RelativeLayout
+            android:id="@+id/rlMain"
+            android:layout_below="@id/rlTop"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:layout_marginHorizontal="@dimen/_10sdp"
+            android:background="@drawable/dr_bg_white_tab">
+
+            <RelativeLayout
+                android:id="@+id/llCoachCategory"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:layout_marginVertical="@dimen/_5sdp">
+                
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/btnLoveCoach"
+                    android:layout_width="@dimen/_140sdp"
+                    android:layout_height="@dimen/_30sdp"
+                    android:layout_marginStart="@dimen/_120sdp"
+                    android:background="@drawable/dr_bg_btn_white"
+                    android:fontFamily="@font/font_neue_haas_grotesk_display_pro_75_bold"
+                    android:text="@string/loved"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/_10sdp" />
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/btnAllCoaches"
+                    android:layout_width="@dimen/_140sdp"
+                    android:layout_height="@dimen/_30sdp"
+                    android:background="@drawable/dr_bg_btn_red"
+                    android:clickable="true"
+                    android:fontFamily="@font/font_neue_haas_grotesk_display_pro_75_bold"
+                    android:text="@string/all_coaches"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/_10sdp" />
+
+                
+            </RelativeLayout>
+            
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/imgAllCoaches"
+                android:layout_width="@dimen/_15sdp"
+                android:layout_height="@dimen/_15sdp"
+                android:src="@drawable/ic_all_coaches_fill"
+                android:layout_alignTop="@id/llCoachCategory"
+                android:layout_alignParentStart="true"
+                android:layout_marginStart="@dimen/_15sdp"
+                android:layout_marginTop="@dimen/_6sdp"  />
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/imgAllLoved"
+                android:layout_width="@dimen/_15sdp"
+                android:layout_height="@dimen/_15sdp"
+                android:layout_alignTop="@id/llCoachCategory"
+                android:src="@drawable/ic_loved_fill"
+                android:layout_alignParentStart="true"
+                android:layout_marginStart="@dimen/_150sdp"
+                android:layout_marginTop="@dimen/_8sdp"  />
+
+        </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/rlMain"
+        >
+        
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rvCoachesList"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_10sdp" />
+        
+    </RelativeLayout>
+
+</RelativeLayout>

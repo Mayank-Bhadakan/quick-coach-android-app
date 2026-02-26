@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/llCategory"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="@dimen/_5sdp"
+    android:orientation="vertical">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cvCategory"
+        android:layout_width="@dimen/_77sdp"
+        android:layout_height="@dimen/_77sdp"
+        app:cardBackgroundColor="#252525"
+        app:cardCornerRadius="@dimen/_10sdp" >
+
+        <RelativeLayout
+            android:id="@+id/llImage"
+            android:layout_width="@dimen/_77sdp"
+            android:layout_height="@dimen/_77sdp" >
+            
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/checkBox"
+                android:layout_width="@dimen/_15sdp"
+                android:layout_height="@dimen/_15sdp"
+                android:src="@drawable/ic_red_round_checked"
+                android:layout_alignParentEnd="true"
+                android:layout_marginHorizontal="@dimen/_5sdp"
+                android:layout_marginVertical="@dimen/_5sdp"
+                android:visibility="visible" />
+
+            <com.facebook.drawee.view.SimpleDraweeView
+                android:id="@+id/imgCategory"
+                android:layout_width="@dimen/_32sdp"
+                android:layout_height="@dimen/_32sdp"
+                android:layout_centerInParent="true"
+                app:actualImageResource="@drawable/ic_baseball" />
+            
+        </RelativeLayout>
+
+    </androidx.cardview.widget.CardView>
+    
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/txtCategoryName"
+        style="@style/Text11RegularGrayStyle"
+        android:layout_width="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="@dimen/_9sdp"
+        android:layout_marginBottom="@dimen/_9sdp"
+        android:textColor="#FFFFFF" />
+
+</LinearLayout>

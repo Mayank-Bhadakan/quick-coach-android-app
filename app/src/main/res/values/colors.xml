@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="purple_200">#FFBB86FC</color>
+    <color name="purple_500">#FF6200EE</color>
+    <color name="purple_700">#FF3700B3</color>
+    <color name="teal_200">#e35656</color>
+    <color name="teal_700">#FFe35656</color>
+    <color name="black">#FF000000</color>
+    <!--<color name="colorRed">#D40000</color>-->
+    <color name="colorRed">#e35656</color>
+    <color name="colorDarkYellow">#FCAA17</color>
+    <color name="colorProgressYellow">#FF9500</color>
+    <color name="colorOrange">#F58C18</color>
+    <color name="colorWhite">#FFFFFF</color>
+    <color name="colorOffWhite">#99FFFFFF</color>
+    <color name="colorGray">#80FFFFFF</color>
+    <color name="colorLightGray">#716F6F</color>
+    <color name="colorBlue">#1185F8</color>
+    <color name="colorEdtBg">#1AFFFFFF</color>
+    <color name="colorBtnGray">#1AFFFFFF</color>
+    <color name="colorDarkBlack">#121212</color>
+    <color name="colorEdtHint">#33FFFFFF</color>
+    <color name="colorBackground">#0D0D0D</color>
+    <color name="colorChatBg">#1C1E22</color>
+    <color name="colorTextHint">#D2D2D2</color>
+
+    <color name="colorSearchBg">#1AADADAD</color>
+    <color name="colorDark">#FF302B2B</color>
+    <color name="colorChatContainerBg">#1C1E22</color>
+    <color name="colorCardBg">#1AADADAD</color>
+    <color name="colorView">#1AADADAD</color>
+    <color name="colorMsgCardBg">#1AADADAD</color>
+    <color name="colorFooter">#1AADADAD</color>
+    <color name="colorChatHint">#FFFFFF</color>
+    <color name="colorSubBackground">#FFFFFF</color>
+    <color name="colorGrayText">#E5E5E5</color>
+    <color name="darkYellow">#DA8A36</color>
+    <color name="silverGray">#BDBDBD</color>
+    <color name="yellow">#FEDA2C</color>
+    <color name="lightBlue">#00C3FF</color>
+    <color name="lightRed">#E35656</color>
+    <color name="colorEdtdBg">#1AADADAD</color>
+
+
+    <!--Light Theme Colors-->
+
+</resources>

@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:id="@+id/llReceiverView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="start"
+        android:layout_marginTop="@dimen/_3sdp"
+        android:layout_marginEnd="@dimen/_50sdp"
+        android:orientation="horizontal"
+        android:visibility="visible" >
+
+        <com.facebook.drawee.view.SimpleDraweeView
+            android:id="@+id/imgProfile"
+            android:layout_width="@dimen/_32sdp"
+            android:layout_height="@dimen/_32sdp"
+            android:layout_gravity="start"
+            app:actualImageResource="@drawable/ic_dummy_icon"
+            app:placeholderImageScaleType="fitXY"
+            app:roundAsCircle="true" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_5sdp"
+            android:layout_marginBottom="@dimen/_3sdp"
+            android:orientation="vertical" >
+
+            <com.facebook.drawee.view.SimpleDraweeView
+                android:id="@+id/txtReceiveThumb"
+                android:layout_width="@dimen/_100sdp"
+                android:layout_height="@dimen/_100sdp"
+                android:visibility="gone"
+                app:placeholderImage="@color/colorGray"
+                app:roundedCornerRadius="@dimen/_4sdp" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/txtReceiveMessage"
+                style="@style/Text12RegularWhiteStyle"
+                android:layout_width="wrap_content"
+                android:background="@drawable/chat_card_left_bg"
+                android:padding="@dimen/_10sdp"
+                android:singleLine="false"
+                android:text="@string/lorem_ipsum_is_simply_dummy_text_of_the_printing_and_typesetting_industry_lorem_ipsum_has_been_the_industry_standard"
+                android:textColor="@color/black" />
+            
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/txtReceiveMessageTime"
+                style="@style/Text8RegularGrayStyle"
+                android:layout_width="wrap_content"
+                android:text="@string/time" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+<!--    Sender Side-->
+
+
+    <LinearLayout
+        android:id="@+id/llSenderView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/llReceiverView"
+        android:layout_marginStart="@dimen/_50sdp"
+        android:layout_marginTop="@dimen/_3sdp"
+        android:gravity="end"
+        android:orientation="vertical"
+        android:visibility="visible" >
+
+        <com.facebook.drawee.view.SimpleDraweeView
+            android:id="@+id/txtSendThumb"
+            android:layout_width="@dimen/_100sdp"
+            android:layout_height="@dimen/_100sdp"
+            android:visibility="gone"
+            app:placeholderImage="@color/colorGray"
+            app:roundedCornerRadius="@dimen/_4sdp" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/txtSendMessage"
+            style="@style/Text12RegularWhiteStyle"
+            android:layout_width="wrap_content"
+            android:layout_marginBottom="@dimen/_3sdp"
+            android:background="@drawable/chat_card_right_bg"
+            android:padding="@dimen/_10sdp"
+            android:singleLine="false"
+            android:text="@string/lorem_ipsum_is_simply_dummy_text_of_the_printing_and_typesetting_industry_lorem_ipsum_has_been_the_industry_standard"
+            android:textColor="@color/colorSubBackground" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/txtSendMessageTime"
+                style="@style/Text8RegularGrayStyle"
+                android:layout_width="wrap_content"
+                android:layout_gravity="end"
+                android:layout_marginEnd="@dimen/_minus3sdp"
+                android:text="@string/time"
+                android:textColor="@color/black"
+                 />
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/imgUnread"
+                android:layout_width="@dimen/_15sdp"
+                android:layout_height="@dimen/_15sdp"
+                android:src="@drawable/ic_unread"
+                android:layout_marginEnd="@dimen/_5sdp" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>

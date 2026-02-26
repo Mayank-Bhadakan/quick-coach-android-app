@@ -1,0 +1,288 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/ic_background_screen"
+    android:orientation="vertical"
+    tools:context=".Activity.EventInfoActivity">
+
+    <com.quickcoach.customs.CustomHeader
+        android:id="@+id/customHeader"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true" />
+
+    <RelativeLayout
+        android:layout_below="@id/customHeader"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true" >
+
+<!--        Main View For Details-->
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/eventBanner"
+            android:layout_marginTop="@dimen/_minus20sdp"
+            app:cardCornerRadius="@dimen/_10sdp" >
+
+            <androidx.core.widget.NestedScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_minus15sdp"
+                    android:orientation="vertical" >
+
+                    <FrameLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" >
+
+                        <LinearLayout
+                            android:id="@+id/llCoachDetails"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:paddingHorizontal="@dimen/_10sdp"
+                            android:paddingTop="@dimen/_48sdp"
+                            android:visibility="visible" >
+
+                            <androidx.appcompat.widget.AppCompatTextView
+                                android:id="@+id/txtStatus"
+                                style="@style/CapsuleBackground"
+                                android:layout_width="@dimen/_60sdp"
+                                android:layout_alignParentEnd= "true"
+                                android:layout_marginVertical="@dimen/_5sdp"
+                                android:layout_marginEnd="@dimen/_8sdp"
+                                android:text="@string/tag"
+                                android:textSize="@dimen/_8sdp"
+                                android:fontFamily="@font/font_neue_haas_grotesk_display_pro_75_bold"
+                                android:textStyle="bold" />
+                            
+                            <androidx.appcompat.widget.AppCompatTextView
+                                android:id="@+id/txtEventName"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/event_title"
+                                android:fontFamily="@font/yugothib"
+                                android:textSize="@dimen/_22sdp"
+                                android:textColor="@color/colorWhite"
+                                android:layout_marginVertical="@dimen/_5sdp" />
+
+                            <LinearLayout
+                                android:id="@+id/llLocation"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal">
+
+                                <androidx.appcompat.widget.AppCompatImageView
+                                    android:id="@+id/imgLocation"
+                                    android:layout_width="@dimen/_15sdp"
+                                    android:layout_height="@dimen/_15sdp"
+                                    android:layout_gravity="center_vertical"
+                                    android:src="@drawable/ic_location" />
+                                
+                                <androidx.appcompat.widget.AppCompatTextView
+                                    android:id="@+id/eventsPlace"
+                                    style="@style/Text11RegularWhiteStyle"
+                                    android:layout_width="wrap_content"
+                                    android:singleLine="false"
+                                    android:textColor="@color/black" />
+
+                            </LinearLayout>
+                            
+                            <RelativeLayout
+                                android:id="@+id/llDateRow"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content">
+
+                                <androidx.appcompat.widget.AppCompatImageView
+                                    android:id="@+id/imgCalender"
+                                    android:layout_width="@dimen/_20sdp"
+                                    android:layout_height="@dimen/_20sdp"
+                                    android:layout_alignParentStart="true"
+                                    android:paddingVertical="@dimen/_3sdp"
+                                    android:layout_marginTop="@dimen/_4sdp"
+                                    android:src="@drawable/ic_calander" />
+
+                                <androidx.appcompat.widget.AppCompatTextView
+                                    android:id="@+id/txtDate"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_toEndOf="@id/imgCalender"
+                                    android:text="@string/date"
+                                    android:fontFamily="@font/yugothib"
+                                    android:textColor="@color/colorWhite"
+                                    android:textSize="@dimen/_12sdp" />
+                                
+                                <androidx.appcompat.widget.AppCompatTextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="@string/to"
+                                    android:layout_toEndOf="@id/txtDate"
+                                    android:fontFamily="@font/yugothib"
+                                    android:layout_marginStart="@dimen/_10sdp"
+                                    android:textSize="@dimen/_12sdp"
+                                    android:textColor="@color/colorWhite" />
+
+                            </RelativeLayout>
+                            
+                            <RelativeLayout
+                                android:id="@+id/llEndDateRow"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content" >
+
+                                <androidx.appcompat.widget.AppCompatImageView
+                                    android:id="@+id/imgCalender1"
+                                    android:layout_width="@dimen/_20sdp"
+                                    android:layout_height="@dimen/_20sdp"
+                                    android:src="@drawable/ic_calander"
+                                    android:layout_alignParentStart="true"
+                                    android:paddingVertical="@dimen/_3sdp"
+                                    android:layout_marginTop="@dimen/_4sdp" />
+                                
+                                <androidx.appcompat.widget.AppCompatTextView
+                                    android:id="@+id/txtEndDate"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_toEndOf="@id/imgCalender1"
+                                    android:text="@string/date"
+                                    android:fontFamily="@font/yugothib"
+                                    android:textSize="@dimen/_12sdp"
+                                    android:layout_marginStart="@dimen/_10sdp"
+                                    android:textColor="@color/colorWhite" />
+
+                            </RelativeLayout>
+                            
+                            <LinearLayout
+                                android:id="@+id/llChiefGuest"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical" >
+
+                                <View
+                                   style="@style/HorizontalViewStyle"
+                                    android:layout_marginVertical="@dimen/_20sdp" />
+                                
+                                <androidx.appcompat.widget.AppCompatTextView
+                                    android:id="@+id/txtChiefGuest"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="@string/chief_guest"
+                                    android:fontFamily="@font/yugothib"
+                                    android:textSize="@dimen/_16sdp"
+                                    android:textStyle="bold"
+                                    android:layout_marginTop="@dimen/_minus10sdp"
+                                    android:layout_marginStart="@dimen/_4sdp"
+                                    android:textColor="@color/colorWhite" />
+
+                                <LinearLayout
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:orientation="horizontal" >
+
+                                    <com.facebook.drawee.view.SimpleDraweeView
+                                        android:id="@+id/imgChiefGuestProfile"
+                                        android:layout_width="@dimen/_50sdp"
+                                        android:layout_height="@dimen/_60sdp"
+                                        app:actualImageResource="@drawable/ic_gray_profile"
+                                        app:roundAsCircle="true"
+                                        app:roundingBorderColor="@color/colorSubBackground"
+                                        app:roundingBorderWidth="@dimen/_5sdp" />
+
+                                    <androidx.appcompat.widget.AppCompatTextView
+                                        android:id="@+id/txtChiefGuestName"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:textSize="@dimen/_14sdp"
+                                        android:text=""
+                                        android:textColor="@color/colorWhite"
+                                        android:layout_marginVertical="@dimen/_14sdp"
+                                        android:layout_marginStart="@dimen/_4sdp" />
+                                    
+                                </LinearLayout>
+
+                            </LinearLayout>
+                            
+                            <LinearLayout
+                                android:id="@+id/llOrganizer"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical" >
+
+                                <View
+                                   style="@style/HorizontalViewStyle" />
+
+                                <androidx.appcompat.widget.AppCompatTextView
+                                    android:id="@+id/txtOrganizer"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="@string/organizer"
+                                    android:textStyle="bold"
+                                    android:fontFamily="@font/yugothib"
+                                    android:textSize="@dimen/_16sdp"
+                                    android:layout_marginStart="@dimen/_4sdp"
+                                    android:textColor="@color/colorWhite" />
+
+                                <androidx.appcompat.widget.AppCompatTextView
+                                    android:id="@+id/txtOrganizerName"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:textSize="@dimen/_14sdp"
+                                    android:textStyle="normal"
+                                    android:text="@string/name"
+                                    android:fontFamily="@font/yugothib"
+                                    android:layout_marginTop="@dimen/_5sdp"
+                                    android:layout_marginStart="@dimen/_8sdp"
+                                    android:textColor="@color/colorWhite" />
+
+                            </LinearLayout>
+
+                            <View
+                               style="@style/HorizontalViewStyle"
+                                android:layout_marginVertical="@dimen/_10sdp" />
+                            
+                            <androidx.appcompat.widget.AppCompatTextView
+                                android:id="@+id/txtDetail"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="@dimen/_8sdp"
+                                android:fontFamily="@font/yugothib"
+                                android:textSize="@dimen/_14sdp"
+                                android:singleLine="false"
+                                android:text="@string/dummy_textlorem" />
+
+                        </LinearLayout>
+
+                    </FrameLayout>
+
+                </LinearLayout>
+
+            </androidx.core.widget.NestedScrollView>
+
+        </androidx.cardview.widget.CardView>
+        
+        <androidx.viewpager.widget.ViewPager
+            android:id="@+id/eventBanner"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_220sdp"
+            android:layout_alignParentTop="true" />
+
+    </RelativeLayout>
+    
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btnApplyEvent"
+        android:layout_height="@dimen/_60sdp"
+        style="@style/ButtonStyle_16px"
+        android:layout_marginHorizontal="@dimen/_50sdp"
+        android:layout_marginTop="@dimen/_216sdp"
+        android:fontFamily="@font/yugothib"
+        android:text="@string/apply_this_event"
+        android:visibility="visible" />
+
+</RelativeLayout>

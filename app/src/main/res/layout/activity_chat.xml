@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f7f7f7"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical"
+    tools:context=".Activity.ChatActivity">
+
+    <com.quickcoach.customs.CustomHeader
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/customHeader"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rvChatList"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@+id/rlBottomView"
+            android:layout_marginStart="@dimen/_10sdp"
+            android:layout_marginEnd="@dimen/_10sdp"
+            android:layout_marginBottom="@dimen/_20sdp" />
+        
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/rlBottomView"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="@dimen/_2sdp"
+            android:background="@color/colorSubBackground"
+            android:paddingHorizontal="@dimen/_10sdp">
+
+            <androidx.appcompat.widget.AppCompatEditText
+                android:layout_width="@dimen/_220sdp"
+                android:id="@+id/edtMessage"
+                style="@style/EditTextParentStyle"
+                android:layout_alignParentStart="true"
+                android:layout_marginVertical="@dimen/_5sdp"
+                android:background="@drawable/dr_chat_edit_text"
+                android:hint="@string/type_message_here"
+                android:inputType="textMultiLine"
+                android:singleLine="false"
+                android:textColor="@color/colorWhite"
+                android:textColorHint="@color/colorWhite" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true">
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:id="@+id/imgAttach"
+                    android:layout_width="@dimen/_23sdp"
+                    android:layout_height="@dimen/_23sdp"
+                    android:layout_marginTop="@dimen/_4sdp"
+                    android:src="@drawable/ic_attach_black" />
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:id="@+id/btnSend"
+                    android:layout_width="@dimen/_30sdp"
+                    android:layout_height="@dimen/_30sdp"
+                    android:layout_marginStart="@dimen/_5sdp"
+                    android:src="@drawable/ic_send" />
+
+            </LinearLayout>
+
+        </RelativeLayout>
+        
+    </RelativeLayout>
+
+</LinearLayout>

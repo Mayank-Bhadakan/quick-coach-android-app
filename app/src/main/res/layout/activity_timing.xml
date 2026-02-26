@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/ic_background_light"
+    android:orientation="vertical"
+    android:visibility="visible"
+    tools:context=".Activity.TimingActivity">
+
+    <com.quickcoach.customs.CustomSubHeader
+        android:id="@+id/customSubHeader"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"/>
+
+    <LinearLayout
+        android:id="@+id/llDays"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/customSubHeader"
+        android:layout_marginStart="@dimen/_4sdp"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:gravity="center"
+        android:orientation="horizontal" >
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/btnSun"
+            style="@style/Text12RegularWhiteStyle"
+            android:layout_width="@dimen/_29sdp"
+            android:layout_height="@dimen/_29sdp"
+            android:background="@drawable/dr_bg_gray"
+            android:gravity="center"
+            android:padding="0dp"
+            android:text="@string/su"
+            android:textColor="@color/colorSubBackground" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/btnMon"
+            style="@style/Text12RegularWhiteStyle"
+            android:layout_width="@dimen/_29sdp"
+            android:layout_height="@dimen/_29sdp"
+            android:layout_marginStart="@dimen/_10sdp"
+            android:background="@drawable/dr_bg_gray"
+            android:gravity="center"
+            android:padding="0dp"
+            android:text="@string/mo"
+            android:textColor="@color/colorSubBackground" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/btnTue"
+            style="@style/Text12RegularWhiteStyle"
+            android:layout_width="@dimen/_29sdp"
+            android:layout_height="@dimen/_29sdp"
+            android:layout_marginStart="@dimen/_10sdp"
+            android:background="@drawable/dr_bg_gray"
+            android:gravity="center"
+            android:padding="0dp"
+            android:text="@string/tu"
+            android:textColor="@color/colorSubBackground" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/btnWed"
+            style="@style/Text12RegularWhiteStyle"
+            android:layout_width="@dimen/_29sdp"
+            android:layout_height="@dimen/_29sdp"
+            android:layout_marginStart="@dimen/_10sdp"
+            android:background="@drawable/dr_bg_gray"
+            android:gravity="center"
+            android:padding="0dp"
+            android:text="@string/we"
+            android:textColor="@color/colorSubBackground" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/btnThu"
+            style="@style/Text12RegularWhiteStyle"
+            android:layout_width="@dimen/_29sdp"
+            android:layout_height="@dimen/_29sdp"
+            android:layout_marginStart="@dimen/_10sdp"
+            android:background="@drawable/dr_bg_gray"
+            android:gravity="center"
+            android:padding="0dp"
+            android:text="@string/th"
+            android:textColor="@color/colorSubBackground" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/btnFri"
+            style="@style/Text12RegularWhiteStyle"
+            android:layout_width="@dimen/_29sdp"
+            android:layout_height="@dimen/_29sdp"
+            android:layout_marginStart="@dimen/_10sdp"
+            android:background="@drawable/dr_bg_gray"
+            android:gravity="center"
+            android:padding="0dp"
+            android:text="@string/fr"
+            android:textColor="@color/colorSubBackground" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/btnSat"
+            style="@style/Text12RegularWhiteStyle"
+            android:layout_width="@dimen/_29sdp"
+            android:layout_height="@dimen/_29sdp"
+            android:layout_marginStart="@dimen/_10sdp"
+            android:background="@drawable/dr_bg_gray"
+            android:gravity="center"
+            android:padding="0dp"
+            android:text="@string/sa"
+            android:textColor="@color/colorSubBackground" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/llTimeView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/llDays"
+        android:layout_marginHorizontal="@dimen/_10sdp"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_15sdp">
+
+            <androidx.appcompat.widget.AppCompatEditText
+                android:id="@+id/edtStartTime"
+                style="@style/EditTextParentStyle"
+                android:layout_weight="0.5"
+                android:focusable="false"
+                android:focusableInTouchMode="false"
+                android:hint="@string/hour" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                style="@style/Text12RegularWhiteStyle"
+                android:layout_width="wrap_content"
+                android:text="@string/to" />
+            
+            <androidx.appcompat.widget.AppCompatEditText
+                android:id="@+id/edtEndTime"
+                style="@style/EditTextParentStyle"
+                android:layout_weight="0.5"
+                android:focusable="false"
+                android:focusableInTouchMode="false"
+                android:hint="@string/hour"  />
+
+        </LinearLayout>
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/btnAdd"
+            style="@style/ButtonParentStyle"
+            android:layout_width="@dimen/_100sdp"
+            android:layout_gravity="center"
+            android:layout_margin="@dimen/_20sdp"
+            android:text="@string/add" />
+
+        <View
+            style="@style/HorizontalViewStyle" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rvDay"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_10sdp" />
+
+    </LinearLayout>
+    
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btnSubmit"
+        style="@style/ButtonStyle_16px"
+        android:layout_alignParentBottom="true"
+        android:layout_marginHorizontal="@dimen/_10sdp"
+        android:layout_marginBottom="@dimen/_10sdp"
+        android:text="@string/submit"  />
+
+</RelativeLayout>

@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/llCvComment"
+    android:layout_marginBottom="@dimen/_10sdp"
+    android:layout_marginHorizontal="@dimen/_5sdp"
+    android:orientation="vertical"
+    app:strokeColor="@color/black"
+    app:cardCornerRadius="@dimen/_10sdp"
+    >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <com.facebook.drawee.view.SimpleDraweeView
+            android:id="@+id/imgProfile"
+            android:layout_width="@dimen/_60sdp"
+            android:layout_height="@dimen/_90sdp"
+            android:layout_gravity="center_vertical"
+            android:layout_margin="@dimen/_6sdp"
+            android:layout_marginHorizontal="@dimen/_4sdp"
+            app:actualImageResource="@drawable/ic_dummy_3" />
+
+    </RelativeLayout>
+    
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="@dimen/_6sdp">
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/txtCoachName"
+            style="@style/Text14BoldWhiteStyle"
+            android:layout_width="wrap_content"
+            android:layout_marginStart="@dimen/_58sdp"
+            android:text="@string/daniel_atkins"
+            android:textColor="@color/black" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/txtDate"
+            android:layout_width="wrap_content"
+            style="@style/Text8RegularGrayStyle"
+            android:layout_alignParentEnd="true"
+            android:text="12_01_2023"
+            android:textColor="#99121212" />
+        
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/txtComment"
+            android:layout_width="wrap_content"
+            style="@style/Text11RegularGrayStyle"
+            android:layout_alignParentEnd="true"
+            android:singleLine="false"
+            android:layout_marginStart="@dimen/_58sdp"
+            android:layout_marginTop="@dimen/_24sdp"
+            android:text="@string/lorem_ipsum_is_simply_dummy_text_of_the_printing_and_typesetting_industry_lorem_ipsum_has_been_the_industry_standard"
+            android:textColor="#99121212" />
+
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>

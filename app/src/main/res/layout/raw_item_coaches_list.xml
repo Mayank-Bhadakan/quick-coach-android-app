@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/cvCoaches"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="@dimen/_10sdp"
+    android:elevation="@dimen/_3sdp"
+    app:cardBackgroundColor="@color/colorCardBg"
+    app:cardCornerRadius="@dimen/_10sdp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/_2sdp"
+        android:orientation="vertical"
+        android:paddingTop="@dimen/_9sdp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingHorizontal="@dimen/_10sdp" >
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" >
+
+                <com.facebook.drawee.view.SimpleDraweeView
+                    android:id="@+id/imgCoach"
+                    android:layout_width="@dimen/_60sdp"
+                    android:layout_height="@dimen/_60sdp"
+                    android:layout_marginBottom="@dimen/_6sdp"
+                    app:placeholderImage="@drawable/ic_gray_profile"
+                    app:placeholderImageScaleType="fitXY"
+                    app:roundedCornerRadius="@dimen/_10sdp" />
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:id="@+id/imgLock"
+                    android:layout_width="@dimen/_15sdp"
+                    android:layout_height="@dimen/_15sdp"
+                    android:src="@drawable/ic_lock_red"
+                    android:layout_toEndOf="@id/imgCoach"
+                    android:layout_marginStart="@dimen/_minus15sdp"
+                    android:layout_marginBottom="@dimen/_10sdp" />
+
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_8sdp"
+                android:layout_marginBottom="@dimen/_6sdp"
+                android:orientation="vertical" >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" >
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:id="@+id/txtCoachName"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/yugothib"
+                        android:textStyle="bold"
+                        android:textSize="@dimen/_12sdp" />
+                    
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_5sdp"
+                        android:gravity="end" >
+
+                        <androidx.appcompat.widget.AppCompatImageView
+                            android:id="@+id/imgLevel"
+                            android:layout_width="@dimen/_15sdp"
+                            android:layout_height="@dimen/_15sdp"
+                            android:src="@drawable/ic_diamond" />
+
+                        <androidx.appcompat.widget.AppCompatImageView
+                            android:id="@+id/imgFavorite"
+                            android:layout_width="@dimen/_15sdp"
+                            android:layout_height="@dimen/_15sdp"
+                            android:layout_marginLeft="@dimen/_5sdp"
+                            android:src="@drawable/ic_like"
+                            android:visibility="gone" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" >
+                    
+                    <RatingBar
+                        android:id="@+id/ratingBar"
+                        style="@android:style/Widget.Material.RatingBar.Indicator"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginVertical="@dimen/_5sdp"
+                        android:layout_marginBottom="@dimen/_6sdp"
+                        android:isIndicator="true"
+                        android:numStars="5"
+                        android:progressDrawable="@drawable/dr_big_rating_star"
+                        android:progressTint="@color/colorDarkYellow" />
+
+                    <androidx.appcompat.widget.AppCompatImageView
+                        android:id="@+id/imgMessage"
+                        android:layout_width="wrap_content"
+                        android:layout_height="@dimen/_15sdp"
+                        android:layout_alignParentEnd="true"
+                        android:layout_marginHorizontal="@dimen/_10sdp"
+                        android:layout_marginStart="@dimen/_5sdp"
+                        android:layout_marginTop="@dimen/_4sdp"
+                        android:src="@drawable/ic_chat"
+                        android:visibility="gone" />
+                    
+                </RelativeLayout>
+                
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal" >
+
+                    <androidx.recyclerview.widget.RecyclerView
+                        android:id="@+id/rvSpeciality"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginHorizontal="@dimen/_2sdp" />
+
+                </RelativeLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>

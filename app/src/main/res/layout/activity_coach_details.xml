@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/ic_background_screen"
+    android:orientation="vertical"
+    tools:context=".Activity.CoachDetailsActivity">
+
+    <com.quickcoach.customs.CustomSubHeader
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/customSubHeader"
+        android:layout_marginTop="@dimen/_10sdp"/>
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/btnNextContinue"
+        android:layout_below="@id/customSubHeader">
+        
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/llCoachDetail"
+            android:layout_marginHorizontal="@dimen/_10sdp"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:orientation="vertical">
+
+
+            <androidx.appcompat.widget.AppCompatEditText
+                android:layout_height="@dimen/_100sdp"
+                android:id="@+id/edtCoachDetails"
+                style="@style/EditTextParentStyle"
+                android:fontFamily="@font/yugothib"
+                android:gravity="start"
+                android:hint="@string/what_is_your_expertise_star"
+                android:singleLine="false"/>
+
+            <androidx.appcompat.widget.AppCompatEditText
+                android:id="@+id/edtSchoolName"
+                style="@style/EditTextParentStyle"
+                android:fontFamily="@font/yugothib"
+                android:hint="@string/organizations_where_you_belong"
+                android:imeOptions="actionNext"
+                android:inputType="text"
+                android:maxLength="20" />
+            
+            <androidx.appcompat.widget.AppCompatEditText
+                android:id="@+id/edtYearsOfExperience"
+                style="@style/EditTextParentStyle"
+                android:fontFamily="@font/yugothib"
+                android:hint="@string/experience_years_as_a_coach"
+                android:imeOptions="actionNext"
+                android:inputType="number"
+                android:maxLength="2" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal">
+
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:layout_width="wrap_content"
+                    android:id="@+id/btnTimings"
+                    style="@style/Text10RegularBlueStyle"
+                    android:layout_gravity="start"
+                    android:text="@string/active_day_and_time" />
+            </LinearLayout>
+
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/uploadId"
+                style="@style/Text10RegularWhiteStyle"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:text="@string/upload_id"
+                android:textColor="#FFFFFF" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rvCertificate"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+        
+    </androidx.core.widget.NestedScrollView>
+    
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btnNextContinue"
+        style="@style/ButtonParentStyle"
+        android:layout_alignParentBottom="true"
+        android:layout_marginHorizontal="@dimen/_40sdp"
+        android:layout_marginBottom="@dimen/_20sdp"
+        android:fontFamily="@font/yugothib"
+        android:text="@string/btnContinue" />
+
+</RelativeLayout>

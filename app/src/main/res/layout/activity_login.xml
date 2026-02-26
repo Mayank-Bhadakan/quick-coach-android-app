@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/ic_main_bg"
+    android:orientation="vertical"
+    tools:context=".Activity.LoginActivity">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/ic_layer_bg">
+
+        <com.quickcoach.customs.CustomSubHeader
+            android:id="@+id/customSubHeader"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="@dimen/_5sdp"
+            android:layout_marginTop="@dimen/_15sdp" />
+        
+        <RelativeLayout
+            android:id="@+id/rlCard"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true">
+        
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cvCardView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_20sdp"
+            android:layout_marginEnd="@dimen/_20sdp"
+            android:layout_marginBottom="@dimen/_10sdp"
+            android:background="@color/colorWhite"
+            app:cardElevation="@dimen/_10sdp"
+            android:elevation="@dimen/_8sdp">
+            
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_60sdp"
+                android:orientation="vertical">
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/txtSubLine"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_30sdp"
+                    android:fontFamily="@font/yugothib"
+                    android:gravity="center"
+                    android:text="@string/welcome_to_quick_coach"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/_14sdp"/>
+                
+                <androidx.appcompat.widget.AppCompatEditText
+                    android:id="@+id/edtEmail"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    style="@style/EditTextParentStyle"
+                    android:backgroundTint="#656665"
+                    android:layout_marginStart="@dimen/_12sdp"
+                    android:layout_marginTop="@dimen/_14sdp"
+                    android:layout_marginEnd="@dimen/_12sdp"
+                    android:hint="@string/email_star"
+                    android:textColorHint="#464746"
+                    android:imeOptions="actionNext"
+                    android:inputType="textEmailAddress"
+                    android:maxLength="50"
+                    />
+
+                <androidx.appcompat.widget.AppCompatEditText
+                    android:id="@+id/edtPassword"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    style="@style/EditTextParentStyle"
+                    android:backgroundTint="#656665"
+                    android:layout_marginStart="@dimen/_12sdp"
+                    android:layout_marginEnd="@dimen/_12sdp"
+                    android:hint="@string/password_star"
+                    android:textColorHint="#464746"
+                    android:imeOptions="actionDone"
+                    android:inputType="textPassword"
+                    android:maxLength="15"/>
+                
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/txtForgotPassword"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="end"
+                    android:layout_marginEnd="@dimen/_10sdp"
+                    android:fontFamily="@font/noto_sansjp_bold"
+                    android:text="@string/forgot_password"
+                    android:textColor="#1185f8"
+                    android:textStyle="normal"
+                    android:textSize="@dimen/_10sdp" />
+
+                <androidx.appcompat.widget.LinearLayoutCompat
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="@dimen/_20sdp"
+                    android:layout_marginTop="@dimen/_20sdp"
+                    android:orientation="vertical"
+                    >
+
+                    <com.google.android.material.button.MaterialButton
+                        android:id="@+id/btnLogin"
+                        style="@style/ButtonStyle_16px"
+                        android:fontFamily="@font/yugothib"
+                        android:textStyle="bold"
+                        android:text="@string/login" />
+
+                </androidx.appcompat.widget.LinearLayoutCompat>
+
+                <androidx.appcompat.widget.LinearLayoutCompat
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="@dimen/_4sdp"
+                    android:layout_marginTop="@dimen/_34sdp"
+                    android:layout_marginBottom="@dimen/_20sdp"
+                    android:gravity="center" >
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:id="@+id/txtWhatIsQC"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/noto_sansjp_bold"
+                        android:gravity="center"
+                        android:text="@string/what_is_quick_coach"
+                        android:textColor="#1185f8"
+                        android:textSize="@dimen/_10sdp" />
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:id="@+id/txtFaq"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/noto_sansjp_bold"
+                        android:text="@string/faq"
+                        android:textColor="#1185f8"
+                        android:textSize="@dimen/_10sdp" />
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:id="@+id/txtContactUs"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/noto_sansjp_bold"
+                        android:text="@string/contact_us"
+                        android:textColor="#1185f8"
+                        android:textSize="@dimen/_10sdp" />
+
+                </androidx.appcompat.widget.LinearLayoutCompat>
+
+            </LinearLayout>
+
+
+        </androidx.cardview.widget.CardView>
+
+        </RelativeLayout>
+
+        <com.facebook.drawee.view.SimpleDraweeView
+            android:id="@+id/logoCoach"
+            android:layout_width="@dimen/_110sdp"
+            android:layout_height="@dimen/_110sdp"
+            android:layout_alignTop="@+id/rlCard"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/_minus35sdp"
+            app:placeholderImage="@drawable/ic_quick_coach" />
+
+        <RelativeLayout
+            android:id="@+id/llContinue"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginHorizontal="@dimen/_15sdp"
+            android:layout_marginBottom="@dimen/_30sdp" >
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/txtContinueWith"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_centerInParent="true"
+                android:layout_marginTop="@dimen/_4sdp"
+                android:layout_marginEnd="@dimen/_70sdp"
+                android:fontFamily="@font/font_neue_haas_grotesk_display_pro_75_bold"
+                android:text="@string/or_continue_with"
+                android:textColor="#ffffff" />
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/btnFaceBook"
+                android:layout_width="@dimen/_33sdp"
+                android:layout_height="@dimen/_28sdp"
+                android:layout_alignParentEnd="true"
+                android:layout_marginEnd="@dimen/_35sdp"
+                android:src="@drawable/ic_facebook" />
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/btnLine"
+                android:layout_width="@dimen/_33sdp"
+                android:layout_height="@dimen/_28sdp"
+                android:layout_alignParentEnd="true"
+                android:layout_marginEnd="@dimen/_1sdp"
+                android:src="@drawable/ic_line" />
+
+        </RelativeLayout>
+
+
+    </RelativeLayout>
+
+</RelativeLayout>

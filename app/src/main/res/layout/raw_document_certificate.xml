@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/llMainRoot"
+    android:layout_width="@dimen/_60sdp"
+    android:layout_height="@dimen/_60sdp"
+    android:layout_margin="@dimen/_5sdp">
+
+    <com.facebook.drawee.view.SimpleDraweeView
+        android:id="@+id/imageCertificate"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerHorizontal="true"
+        app:placeholderImage="@color/colorGray"
+        app:roundedCornerRadius="@dimen/_4sdp" />
+    
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/btnRemove"
+        android:layout_width="@dimen/_15sdp"
+        android:layout_height="@dimen/_15sdp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:src="@drawable/ic_close"
+        android:layout_margin="@dimen/_3sdp"
+        android:layout_marginStart="@dimen/_30sdp"
+        android:visibility="gone" />
+
+</RelativeLayout>

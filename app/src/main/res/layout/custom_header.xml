@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/llHeaderView"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@android:color/transparent"
+    android:orientation="vertical"
+    android:layout_marginTop="@dimen/_5sdp">
+
+    <RelativeLayout
+        android:id="@+id/rlHeaderView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="@dimen/_12sdp"
+        android:paddingEnd="@dimen/_15sdp"
+        android:paddingBottom="@dimen/_12sdp">
+
+
+
+        <LinearLayout
+            android:id="@+id/llHeaderName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/dr_header_title_black_bg"
+            >
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/imgLeft"
+                android:layout_width="@dimen/_20sdp"
+                android:layout_height="@dimen/_20sdp"
+                android:padding="@dimen/_4sdp"
+                android:layout_gravity="center_vertical"
+                android:layout_marginStart="@dimen/_10sdp"
+                android:src="@drawable/ic_back"
+               />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/txtTitleHeader"
+                style="@style/Text16BoldWhiteStyle"
+                android:layout_width="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginEnd="@dimen/_15sdp"
+                android:layout_marginStart="@dimen/_5sdp"
+                android:textColor="@color/colorSubBackground"
+                />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toStartOf="@+id/imgRight"
+            android:layout_toEndOf="@+id/llHeaderName">
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/imgVideoCall"
+                android:layout_width="@dimen/_20sdp"
+                android:layout_height="@dimen/_20sdp"
+                android:layout_marginStart="@dimen/_3sdp"
+                android:padding="@dimen/_4sdp"
+                android:src="@drawable/ic_video"
+                android:visibility="gone" />
+        </LinearLayout>
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/imgRight"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:src="@drawable/ic_title_logo_quick_coach"
+            android:layout_centerHorizontal="true"
+             />
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/imgWhiteRight"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_centerHorizontal="true"
+            android:src="@drawable/ic_title_logo_quick_coach_white" />
+
+    </RelativeLayout>
+
+</LinearLayout>

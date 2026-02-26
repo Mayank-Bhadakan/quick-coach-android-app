@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/colorBackground"
+    android:gravity="center"
+    android:layout_margin="@dimen/_15sdp"
+    android:paddingBottom="@dimen/_15sdp"
+    android:orientation="vertical"
+    >
+    
+    <RelativeLayout
+        android:id="@+id/rlHeader"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical">
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/txtTitleHeader"
+            style="@style/Text16BoldWhiteStyle"
+            android:layout_alignParentTop="true"
+            android:gravity="center"
+            android:paddingVertical="@dimen/_15sdp"
+            android:text="@string/filter"
+            android:visibility="visible" />
+        
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/btnClose"
+            android:layout_width="@dimen/_25sdp"
+            android:layout_height="@dimen/_25sdp"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:src="@drawable/ic_close"
+            android:layout_marginEnd="@dimen/_15sdp" />
+        
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/rlHeader"
+        android:orientation="vertical"
+        android:paddingHorizontal="@dimen/_15sdp">
+
+        <androidx.appcompat.widget.AppCompatSpinner
+            android:id="@+id/spCategory"
+            style="@style/EditTextParentStyle"
+            android:layout_marginTop="@dimen/_14sdp"
+            android:layout_height="wrap_content"
+            android:imeOptions="actionNext"
+            android:paddingVertical="@dimen/_5sdp"
+            android:autofillHints="Select Category"
+            android:popupBackground="@color/colorBackground"
+            android:prompt="@string/select_category" />
+        
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/txtSelectDate"
+            style="@style/EditTextParentStyle"
+            android:hint="@string/select_date"
+            android:textColorHint="@color/colorEdtHint"
+            android:imeOptions="actionDone"
+            android:inputType="date"
+            android:maxLength="15" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_30sdp">
+            
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btnReset"
+                style="@style/ButtonParentStyle"
+                android:layout_weight="0.5"
+                android:layout_marginEnd="@dimen/_5sdp"
+                android:text="@string/reset"  />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btnApply"
+                style="@style/ButtonParentStyle"
+                android:layout_weight="0.5"
+                android:layout_marginStart="@dimen/_5sdp"
+                android:text="@string/apply" />
+            
+        </LinearLayout>
+        
+    </LinearLayout>
+
+</RelativeLayout>

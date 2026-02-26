@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="@android:color/transparent">
+
+    <LinearLayout
+        android:id="@+id/llOrgDetails"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingHorizontal="@dimen/_10sdp"
+        android:paddingVertical="@dimen/_10sdp"
+        android:orientation="horizontal" >
+
+        <com.facebook.drawee.view.SimpleDraweeView
+            android:id="@+id/imgOrganiser"
+            android:layout_width="@dimen/_30sdp"
+            android:layout_height="@dimen/_30sdp"
+            app:failureImageScaleType="fitXY"
+            app:placeholderImage="@drawable/ic_user_f4"
+            app:roundedCornerRadius="@dimen/_10sdp" />
+        
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/txtCoachName"
+            style="@style/Text12BoldWhiteStyle"
+            android:layout_width="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginStart="@dimen/_10sdp"
+            android:text="@string/your_name" />
+
+    </LinearLayout>
+
+</androidx.appcompat.widget.LinearLayoutCompat>

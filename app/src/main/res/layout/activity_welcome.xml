@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/ic_main_bg"
+    android:orientation="vertical"
+    tools:context=".Activity.WelcomeActivity">
+    
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/ic_layer_bg"
+>
+
+        <RelativeLayout
+            android:id="@+id/rlCard"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            >
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cvCardView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="@dimen/_20sdp"
+                android:background="@color/colorWhite"
+                android:elevation="@dimen/_8sdp"
+                app:cardElevation="@dimen/_10sdp">
+
+                <androidx.appcompat.widget.LinearLayoutCompat
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_60sdp"
+                    android:orientation="vertical"
+                    >
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:id="@+id/txtSubLine"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/yugothib"
+                        android:gravity="center"
+                        android:text="@string/welcome_to_quick_coach"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/_14sdp"/>
+
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginTop="@dimen/_42sdp">
+
+                        <androidx.appcompat.widget.AppCompatButton
+                            android:id="@+id/btnCoaches"
+                            style="@style/SmallBlackButtonParentStyle"
+                            android:layout_width="@dimen/_108sdp"
+                            android:layout_height="@dimen/_23sdp"
+                            android:layout_marginStart="@dimen/_100sdp"
+                            android:layout_marginEnd="@dimen/_8sdp"
+                            android:background="@color/black"
+                            android:text="@string/coach"
+                            android:textSize="@dimen/_10sdp"
+                            android:textStyle="bold"/>
+
+                        <androidx.appcompat.widget.AppCompatButton
+                            android:id="@+id/btnPlayer"
+                            style="@style/SmallButtonParentStyle"
+                            android:layout_width="@dimen/_108sdp"
+                            android:layout_height="@dimen/_23sdp"
+                            android:layout_marginStart="@dimen/_8sdp"
+                            android:text="@string/player_s"
+                            android:textSize="@dimen/_10sdp"
+                            android:textStyle="bold"/>
+
+                    </RelativeLayout>
+                    
+                    <androidx.appcompat.widget.LinearLayoutCompat
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginHorizontal="@dimen/_20sdp"
+                        android:layout_marginTop="@dimen/_18sdp"
+                        android:orientation="vertical"
+                        >
+
+                        <com.google.android.material.button.MaterialButton
+                            android:id="@+id/btnLogin"
+                            style="@style/ButtonStyle_16px"
+                            android:fontFamily="@font/yugothib"
+                            android:text="@string/login"
+                            android:textStyle="bold"
+                            />
+
+                        <com.google.android.material.button.MaterialButton
+                            android:id="@+id/btnSignup"
+                            style="@style/ButtonStyle_16px"
+                            android:backgroundTint="@android:color/transparent"
+                            android:fontFamily="@font/yugothib"
+                            android:text="@string/sign_up"
+                            android:textColor="@color/colorRed"
+                            android:textStyle="bold"
+                            app:cornerRadius="@dimen/_6sdp"
+                            app:strokeColor="@color/colorRed"
+                            app:strokeWidth="@dimen/_2sdp"/>
+
+                    </androidx.appcompat.widget.LinearLayoutCompat>
+
+                    <androidx.appcompat.widget.LinearLayoutCompat
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginHorizontal="@dimen/_4sdp"
+                        android:layout_marginTop="@dimen/_34sdp"
+                        android:layout_marginBottom="@dimen/_20sdp"
+                        android:gravity="center">
+
+                        <androidx.appcompat.widget.AppCompatTextView
+                            android:id="@+id/txtWhatIsQC"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/noto_sansjp_bold"
+                            android:gravity="center"
+                            android:text="@string/what_is_quick_coach"
+                            android:textColor="#1185f8"
+                            android:textSize="@dimen/_10sdp" />
+
+                        <androidx.appcompat.widget.AppCompatTextView
+                            android:id="@+id/txtFaq"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/noto_sansjp_bold"
+                            android:text="@string/faq"
+                            android:textColor="#1185f8"
+                            android:textSize="@dimen/_10sdp" />
+                        
+                        <androidx.appcompat.widget.AppCompatTextView
+                            android:id="@+id/txtContactUs"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/noto_sansjp_bold"
+                            android:text="@string/contact_us"
+                            android:textColor="#1185f8"
+                            android:textSize="@dimen/_10sdp" />
+
+                    </androidx.appcompat.widget.LinearLayoutCompat>
+
+                </androidx.appcompat.widget.LinearLayoutCompat>
+
+            </androidx.cardview.widget.CardView>
+
+        </RelativeLayout>
+
+        <com.facebook.drawee.view.SimpleDraweeView
+            android:id="@+id/LogoCoach"
+            android:layout_width="@dimen/_150sdp"
+            android:layout_height="@dimen/_150sdp"
+            android:layout_alignTop="@id/rlCard"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/_minus60sdp"
+            app:placeholderImage="@drawable/ic_quick_coach"/>
+
+        <RelativeLayout
+            android:id="@+id/llContinue"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginHorizontal="@dimen/_15sdp"
+            android:layout_marginBottom="@dimen/_20sdp">
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/txtContinueWith"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_centerInParent="true"
+                android:layout_marginEnd="@dimen/_70sdp"
+                android:fontFamily="@font/neue_haas_display_medium"
+                android:text="@string/or_continue_with"
+                android:textColor="#ffffff"/>
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/btnFaceBook"
+                android:layout_width="@dimen/_33sdp"
+                android:layout_height="@dimen/_28sdp"
+                android:layout_alignParentEnd="true"
+                android:layout_marginEnd="@dimen/_35sdp"
+                android:src="@drawable/ic_facebook"/>
+            
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/btnLine"
+                android:layout_width="@dimen/_33sdp"
+                android:layout_height="@dimen/_28sdp"
+                android:layout_alignParentEnd="true"
+                android:layout_marginEnd="@dimen/_1sdp"
+                android:src="@drawable/ic_line" />
+
+        </RelativeLayout>
+
+
+    </RelativeLayout>
+
+</RelativeLayout>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/llCategoryGame"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+    
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/txtGame"
+        style="@style/CapsuleRedBackground"
+        android:layout_width="@dimen/_52sdp"
+        android:layout_marginEnd="@dimen/_1sdp"
+        android:layout_marginBottom="@dimen/_5sdp"
+        android:textStyle="bold" />
+
+</androidx.appcompat.widget.LinearLayoutCompat>

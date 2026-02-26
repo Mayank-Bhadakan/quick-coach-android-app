@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="@dimen/_12sdp"
+    android:layout_marginEnd="@dimen/_7sdp">
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/imgDetailDot"
+        android:layout_width="@dimen/_6sdp"
+        android:layout_height="@dimen/_6sdp"
+        android:layout_marginTop="@dimen/_3sdp"
+        android:src="@drawable/ic_red_bullet_dot"  />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/lblDay"
+        style="@style/Text10RegularWhiteStyle"
+        android:layout_toEndOf="@id/imgDetailDot"
+        android:singleLine="false"
+        android:textColor="#ffffff" />
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/btnRemoveDay"
+        android:layout_width="@dimen/_15sdp"
+        android:layout_height="@dimen/_15sdp"
+        android:layout_alignParentEnd="true"
+        android:layout_centerVertical="true"
+        android:src="@drawable/ic_close"
+        android:layout_marginStart="@dimen/_10sdp"
+        android:layout_marginEnd="@dimen/_10sdp"  />
+
+</RelativeLayout>

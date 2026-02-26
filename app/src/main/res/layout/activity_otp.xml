@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/ic_background_light"
+    android:orientation="vertical"
+    tools:context=".Activity.OtpActivity">
+
+    <com.quickcoach.customs.CustomSubHeader
+        android:id="@+id/customSubHeader"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_10sdp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/customSubHeader"
+        android:layout_marginHorizontal="@dimen/_15sdp"
+        android:orientation="vertical">
+
+        <androidx.appcompat.widget.AppCompatTextView
+            style="@style/Text12RegularWhiteStyle"
+            android:text="@string/insert_your_code_here"
+            android:textColor="#FFFFFF" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:orientation="horizontal">
+
+            <androidx.appcompat.widget.AppCompatEditText
+                android:id="@+id/edtOtp1"
+                style="@style/Text18RegularWhiteStyle"
+                android:layout_width="0dp"
+                android:backgroundTint="@color/colorSubBackground"
+                android:layout_marginHorizontal="@dimen/_10sdp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:inputType="number"
+                android:imeOptions="actionNext"
+                android:maxLength="1" />
+
+            <androidx.appcompat.widget.AppCompatEditText
+                android:id="@+id/edtOtp2"
+                style="@style/Text18RegularWhiteStyle"
+                android:layout_width="0dp"
+                android:backgroundTint="@color/colorSubBackground"
+                android:layout_marginHorizontal="@dimen/_10sdp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:inputType="number"
+                android:imeOptions="actionNext"
+                android:maxLength="1" />
+
+            <androidx.appcompat.widget.AppCompatEditText
+                android:id="@+id/edtOtp3"
+                style="@style/Text18RegularWhiteStyle"
+                android:layout_width="0dp"
+                android:backgroundTint="@color/colorSubBackground"
+                android:layout_marginHorizontal="@dimen/_10sdp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:inputType="number"
+                android:imeOptions="actionNext"
+                android:maxLength="1" />
+
+            <androidx.appcompat.widget.AppCompatEditText
+                android:id="@+id/edtOtp4"
+                style="@style/Text18RegularWhiteStyle"
+                android:layout_width="0dp"
+                android:backgroundTint="@color/colorSubBackground"
+                android:layout_marginHorizontal="@dimen/_10sdp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:inputType="number"
+                android:imeOptions="actionDone"
+                android:maxLength="1" />
+
+        </LinearLayout>
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnContinue"
+            style="@style/ButtonParentStyle"
+            android:layout_margin="@dimen/_10sdp"
+            android:text="@string/btnContinue"
+            android:textStyle="bold" />
+        
+        <androidx.appcompat.widget.AppCompatTextView
+            android:layout_width="wrap_content"
+            android:id="@+id/btnResendOtp"
+            style="@style/Text11RegularGrayStyle"
+            android:text="@string/resend_again"
+            android:layout_gravity="right"
+            android:textColor="@color/colorSubBackground" />
+
+    </LinearLayout>
+
+</RelativeLayout>

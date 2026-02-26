@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Activity.SettingActivity">
+
+    <LinearLayout
+        android:id="@+id/llProfile"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="@dimen/_10sdp">
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/imgProfile"
+            android:layout_width="@dimen/_30sdp"
+            android:layout_height="@dimen/_30sdp"
+            android:layout_marginStart="@dimen/_10sdp"
+            android:src="@drawable/ic_profile" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            style="@style/Text10BoldWhiteStyle"
+            android:layout_marginVertical="@dimen/_5sdp"
+            android:layout_marginStart="@dimen/_10sdp"
+            android:gravity="start"
+            android:text="@string/profile"
+            android:textColor="@color/colorBackground"/>
+
+    </LinearLayout>
+
+    <View
+        style="@style/HorizontalViewStyle" />
+
+    <LinearLayout
+        android:id="@+id/llNotification"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="@dimen/_10sdp">
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/imgNotification"
+            android:layout_width="@dimen/_30sdp"
+            android:layout_height="@dimen/_30sdp"
+            android:layout_marginStart="@dimen/_10sdp"
+            android:src="@drawable/ic_notification" />
+        
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/txtTitleHeader"
+            style="@style/Text10BoldWhiteStyle"
+            android:layout_marginVertical="@dimen/_5sdp"
+            android:layout_marginStart="@dimen/_5sdp"
+            android:gravity="start"
+            android:text="@string/notifications"
+            android:textColor="@color/colorBackground" />
+
+    </LinearLayout>
+
+    <View
+        style="@style/HorizontalViewStyle" />
+
+    <LinearLayout
+        android:id="@+id/llDeleteAccount"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="@dimen/_10sdp">
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/imgDeleteAccount"
+            android:layout_width="@dimen/_30sdp"
+            android:layout_height="@dimen/_30sdp"
+            android:layout_marginStart="@dimen/_10sdp"
+            android:src="@drawable/ic_subscription"/>
+
+        <androidx.appcompat.widget.AppCompatTextView
+            style="@style/Text10BoldWhiteStyle"
+            android:layout_marginVertical="@dimen/_5sdp"
+            android:layout_marginStart="@dimen/_10sdp"
+            android:gravity="start"
+            android:text="Delete Account"
+            android:textColor="@color/colorBackground" />
+
+    </LinearLayout>
+
+    <View
+        style="@style/HorizontalViewStyle" />
+
+    <LinearLayout
+        android:id="@+id/llLogout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="@dimen/_10sdp">
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/imgLogout"
+            android:layout_width="@dimen/_30sdp"
+            android:layout_height="@dimen/_30sdp"
+            android:layout_marginStart="@dimen/_10sdp"
+            android:src="@drawable/ic_logout" />
+        
+        <androidx.appcompat.widget.AppCompatTextView
+            style="@style/Text10BoldWhiteStyle"
+            android:layout_marginVertical="@dimen/_5sdp"
+            android:layout_marginStart="@dimen/_10sdp"
+            android:gravity="start"
+            android:text="@string/logout"
+            android:textColor="@color/colorBackground"
+            />
+
+    </LinearLayout>
+
+</androidx.appcompat.widget.LinearLayoutCompat>

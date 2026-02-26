@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center_horizontal"
+    android:background="#E5E5E5"
+    android:orientation="horizontal"
+    >
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/imgDot"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_7sdp"
+        android:src="@drawable/ic_red_bullet_dot" />
+    
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/eventInfo"
+        style="@style/Text10RegularWhiteStyle"
+        android:layout_marginStart="@dimen/_10sdp"
+        android:singleLine="false"
+        android:text=""
+        android:textColor="#121212"  />
+
+</RelativeLayout>

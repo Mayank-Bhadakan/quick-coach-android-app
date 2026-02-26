@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/ic_background_screen"
+    android:orientation="vertical"
+    tools:context=".Activity.AddEventActivity">
+
+    <com.quickcoach.customs.CustomHeader
+        android:id="@+id/customHeader"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true" />
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/customHeader"
+        android:layout_marginTop="-13dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingHorizontal="@dimen/_15sdp" >
+
+            <androidx.appcompat.widget.AppCompatEditText
+                android:id="@+id/edtEventName"
+                style="@style/EditTextParentStyle"
+                android:layout_marginTop="@dimen/_20sdp"
+                android:hint="@string/events_name"
+                android:imeOptions="actionNext"
+                android:inputType="text"
+                android:maxLength="100" />
+
+            <androidx.appcompat.widget.AppCompatEditText
+                android:id="@+id/edtEmail"
+                style="@style/EditTextParentStyle"
+                android:hint="@string/email"
+                android:imeOptions="actionNext"
+                android:inputType="textEmailAddress"
+                android:maxLength="50"  />
+
+            <androidx.appcompat.widget.AppCompatEditText
+                android:id="@+id/edtEventDetails"
+                style="@style/EditTextParentStyle"
+                android:layout_height="@dimen/_100sdp"
+                android:hint="@string/events_details"
+                android:gravity="start"
+                android:imeOptions="actionDone"
+                android:singleLine="false" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+               android:id="@+id/txtTerms"
+                style="@style/Text12RegularGrayStyle"
+                android:singleLine="false"
+                android:gravity="center"
+                android:text="@string/if_you_would_like_to_organize_an_event_through_QUICK_COACH_you_can_request_from_here"
+                />
+
+            <com.google.android.material.button.MaterialButton
+               android:id="@+id/btnSubmit"
+                style="@style/ButtonParentStyle"
+                android:layout_marginTop="@dimen/_20sdp"
+                android:layout_marginBottom="@dimen/_30sdp"
+                android:text="@string/submit"  />
+            
+        </LinearLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+</RelativeLayout>

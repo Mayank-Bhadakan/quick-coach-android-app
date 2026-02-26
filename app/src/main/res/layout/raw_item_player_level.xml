@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginHorizontal="@dimen/_14sdp"
+    android:layout_marginBottom="@dimen/_10sdp"
+    android:background="@drawable/bg_txt"
+    android:gravity="center_vertical"
+    android:orientation="horizontal"
+    android:paddingVertical="@dimen/_4sdp"
+    android:paddingHorizontal="@dimen/_10sdp"
+    >
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/imgChecked"
+        android:layout_width="@dimen/_10sdp"
+        android:layout_height="@dimen/_10sdp"
+        android:src="@drawable/ic_red_round_checked" />
+    
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/txtLevel"
+        android:text="@string/lets_Login."
+        style="@style/Text12BoldWhiteStyle"
+        android:singleLine="false" />
+
+</androidx.appcompat.widget.LinearLayoutCompat>

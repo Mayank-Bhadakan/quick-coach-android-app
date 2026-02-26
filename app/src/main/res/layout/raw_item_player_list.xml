@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/cvPlayer"
+    android:layout_width="@dimen/_130sdp"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="@dimen/_10sdp"
+    android:layout_marginStart="@dimen/_10sdp"
+    app:cardBackgroundColor="@color/colorCardBg"
+    app:cardCornerRadius="@dimen/_10sdp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_minus5sdp">
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/imgLevelBg"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/bg_beginner" />
+
+            <com.facebook.drawee.view.SimpleDraweeView
+                android:id="@+id/imgPlayer"
+                android:layout_width="@dimen/_50sdp"
+                android:layout_height="@dimen/_50sdp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="@dimen/_15sdp"
+                android:layout_marginBottom="@dimen/_6sdp"
+                app:placeholderImage="@drawable/ic_gray_profile"
+                app:placeholderImageScaleType="fitXY"
+                app:roundedCornerRadius="@dimen/_10sdp"
+                app:roundAsCircle="true" />
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/imgLevel"
+                android:layout_width="@dimen/_20sdp"
+                android:layout_height="@dimen/_20sdp"
+                android:src="@drawable/ic_gold"
+                android:layout_alignEnd="@id/imgPlayer"
+                android:layout_alignBottom="@id/imgPlayer" />
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/imgProficiency"
+                android:layout_width="@dimen/_15sdp"
+                android:layout_height="@dimen/_15sdp"
+                android:src="@drawable/ic_gold_shield"
+                android:layout_alignParentEnd="true"
+                android:layout_marginTop="@dimen/_12sdp"
+                android:layout_marginEnd="@dimen/_10sdp"
+                android:visibility="visible" />
+
+        </RelativeLayout>
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/txtGame"
+            style="@style/CapsuleRedBackground"
+            android:layout_width="@dimen/_52sdp"
+            android:layout_height="@dimen/_17sdp"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/_minus10sdp"
+            android:singleLine="false"
+            android:gravity="center"
+            android:textStyle="bold" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/txtPlayerName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:fontFamily="@font/yugothib"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:singleLine="false"
+            android:textSize="@dimen/_14sdp" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/txtSince"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:layout_marginBottom="@dimen/_5sdp"
+            android:fontFamily="@font/yugothib"
+            android:singleLine="true"
+            android:text=""
+            android:textSize="@dimen/_8sdp" />
+
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>

@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/ic_background_light"
+    tools:context=".Activity.BankDetailsActivity">
+
+    <com.quickcoach.customs.CustomSubHeader
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/customSubHeader"
+        android:layout_marginTop="@dimen/_10sdp"
+        />
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/customSubHeader"
+        android:layout_above="@+id/btnSubmit"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/llBankDetails"
+            android:layout_marginHorizontal="@dimen/_10sdp"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:orientation="vertical">
+
+            <androidx.appcompat.widget.AppCompatEditText
+                android:id="@+id/edtBankName"
+                style="@style/EditTextParentStyle"
+                android:hint="@string/bank_name"
+                android:imeOptions="actionNext"/>
+
+            <androidx.appcompat.widget.AppCompatEditText
+                android:id="@+id/edtBankBranch"
+                style="@style/EditTextParentStyle"
+                android:hint="@string/bank_branch"
+                android:imeOptions="actionNext"/>
+
+            <androidx.appcompat.widget.AppCompatEditText
+               android:id="@+id/edtAccountHolderName"
+                style="@style/EditTextParentStyle"
+                android:hint="@string/account_holder_name"
+                android:gravity="start" />
+
+            <androidx.appcompat.widget.AppCompatEditText
+               android:id="@+id/edtAccountNumber"
+                style="@style/EditTextParentStyle"
+                android:hint="@string/account_number"
+                android:imeOptions="actionNext"
+                android:inputType="number"
+                android:maxLength="20" />
+            
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/btnBankDetails"
+                style="@style/Text10RegularWhiteStyle"
+                android:layout_width="wrap_content"
+                android:text="@string/account_type" />
+            
+            <RadioGroup
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/rbGroup"
+                android:orientation="horizontal"
+                android:backgroundTint="@color/colorRed"
+                android:weightSum="2"
+                >
+
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/btnChecking"
+                    android:layout_weight="1"
+                    android:checked="true"
+                    android:textColor="@color/colorWhite"
+                    android:backgroundTint="@color/colorRed"
+                    android:text="@string/checking"
+                    android:textSize="@dimen/_10sdp"/>
+
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/btnSaving"
+                    android:layout_weight="1"
+                    android:textColor="@color/colorWhite"
+                    android:backgroundTint="@color/colorRed"
+                    android:text="@string/savings"
+                    android:textSize="@dimen/_10sdp"/>
+
+            </RadioGroup>
+
+        </LinearLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+    <com.google.android.material.button.MaterialButton
+       android:id="@+id/btnSubmit"
+        style="@style/ButtonParentStyle"
+        android:layout_alignParentBottom="true"
+        android:layout_marginHorizontal="@dimen/_10sdp"
+        android:layout_marginBottom="@dimen/_20sdp"
+        android:text="@string/submit"
+        android:textStyle="bold" />
+
+</RelativeLayout>

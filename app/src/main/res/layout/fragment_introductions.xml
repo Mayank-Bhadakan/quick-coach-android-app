@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".fragments.IntroductionsFragment">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="@dimen/_minus15sdp"
+        android:layout_weight="0.4">
+        
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/imgMain"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+        
+        
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/blackMask"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+        
+    </RelativeLayout>
+    
+    <RelativeLayout
+        android:id="@+id/RLMain"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="0.8"
+        android:layout_marginTop="@dimen/_minus15sdp"
+        android:layout_marginBottom="@dimen/_minus20sdp"
+        android:gravity="center" >
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/txtTitle"
+            style="@style/Text35RegularWhiteStyle"
+            android:gravity="center"
+            android:text="@string/choose_us_Choose_right_coach"
+            android:textColor="@color/black"
+            android:lineSpacingExtra="@dimen/_6sdp"
+            android:layout_marginTop="@dimen/_20sdp"
+            android:singleLine="false"
+            android:textSize="@dimen/_22sdp" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/txtSubTitle"
+            style="@style/Text10RegularWhiteStyle"
+            android:layout_below="@+id/txtTitle"
+            android:layout_marginTop="@dimen/_4sdp"
+            android:text="@string/lorem_ipsum_dolor_sit_amet_dummy_text"
+            android:gravity="center"
+            android:lineSpacingExtra="@dimen/_3sdp"
+            android:singleLine="false"
+            android:textColor="@color/black" />
+
+    </RelativeLayout>
+
+</androidx.appcompat.widget.LinearLayoutCompat>

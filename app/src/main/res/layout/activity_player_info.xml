@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/ic_background_screen"
+    tools:context=".Activity.PlayerInfoActivity">
+
+    <com.quickcoach.customs.CustomHeader
+        android:id="@+id/customHeader"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="@dimen/_12sdp" />
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/customHeader">
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/customHeader"
+            android:background="@color/colorBackground">
+
+            <RelativeLayout
+                android:id="@+id/rlTop"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_minus10sdp">
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:id="@+id/bgPlayer"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/bg_coach_info" />
+
+                <com.facebook.drawee.view.SimpleDraweeView
+                    android:id="@+id/imgPlayerInfo"
+                    android:layout_width="@dimen/_120sdp"
+                    android:layout_height="@dimen/_120sdp"
+                    android:layout_centerInParent="true"
+                    app:roundAsCircle="true" />
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:id="@+id/imgLevel"
+                    android:layout_width="@dimen/_20sdp"
+                    android:layout_height="@dimen/_30sdp"
+                    android:layout_alignEnd="@id/imgPlayerInfo"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="@dimen/_140sdp"
+                    android:src="@drawable/ic_gold" />
+
+            </RelativeLayout>
+
+
+            <!--            main view for details-->
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@id/rlTop"
+                android:orientation="vertical">
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="@dimen/_minus8sdp"
+                    app:cardBackgroundColor="@color/colorBackground"
+                    app:cardCornerRadius="@dimen/_10sdp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginHorizontal="@dimen/_10sdp"
+                        android:orientation="vertical">
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/_4sdp"
+                            android:orientation = "horizontal">
+
+                            <androidx.appcompat.widget.AppCompatTextView
+                                android:id="@+id/txtName"
+                                style="@style/Text24BoldWhiteStyle"
+                                android:layout_width="wrap_content"
+                                android:gravity="start"
+                                android:text="@string/daniel_atkins" />
+
+                            <androidx.appcompat.widget.AppCompatImageView
+                                android:id="@+id/imgProficiency"
+                                android:layout_width="@dimen/_20sdp"
+                                android:layout_height="@dimen/_30sdp"
+                                android:layout_alignParentEnd="true"
+                                android:layout_marginTop="@dimen/_4sdp"
+                                android:layout_marginEnd="@dimen/_2sdp"
+                                android:src="@drawable/ic_gray_shield" />
+
+                            
+                        </RelativeLayout>
+
+                        <androidx.recyclerview.widget.RecyclerView
+                            android:id="@+id/rvSports"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_horizontal"
+                            android:layout_marginStart="@dimen/_5sdp"
+                            android:layout_marginTop="@dimen/_10sdp" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center">
+                            
+                            <androidx.appcompat.widget.AppCompatTextView
+                                style="@style/Text10BoldWhiteStyle"
+                                android:text="@string/primary_languag"/>
+                            
+                        </LinearLayout>
+
+                        <androidx.appcompat.widget.AppCompatTextView
+                            android:id="@+id/language"
+                            style="@style/Text11RegularGrayStyle"
+                            android:layout_marginStart="@dimen/_5sdp"
+                            android:singleLine="false"
+                            android:text="@string/english" />
+
+                        <View
+                            style="@style/HorizontalViewStyle"
+                            android:layout_marginTop="@dimen/_10sdp" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center">
+
+                            <androidx.appcompat.widget.AppCompatTextView
+                                style="@style/Text10BoldWhiteStyle"
+                                android:text="@string/total_taken_advice" />
+
+                        </LinearLayout>
+                        
+                        <androidx.appcompat.widget.AppCompatTextView
+                            style="@style/Text11RegularGrayStyle"
+                            android:id="@+id/txtAdvice"
+                            android:layout_marginStart="@dimen/_5sdp"
+                            android:singleLine="false"
+                            android:text="@string/_20" />
+
+                        <View
+                            style="@style/HorizontalViewStyle"
+                            android:layout_marginTop="@dimen/_10sdp" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center">
+
+                            <androidx.appcompat.widget.AppCompatTextView
+                                style="@style/Text10BoldWhiteStyle"
+                                android:text="@string/reported_by_coach" />
+
+                        </LinearLayout>
+                        
+                        <androidx.appcompat.widget.AppCompatTextView
+                            android:id="@+id/txtReportCoach"
+                            style="@style/Text11RegularGrayStyle"
+                            android:layout_marginStart="@dimen/_5sdp"
+                            android:singleLine="false"
+                            android:text="@string/_0" />
+
+                        <View
+                            style="@style/HorizontalViewStyle"
+                            android:layout_marginTop="@dimen/_10sdp" />
+                        
+                        <androidx.recyclerview.widget.RecyclerView
+                            android:id="@+id/rvCoachesComments"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/_4sdp"
+                            tools:listitem="@layout/raw_comment_coaches"
+                            android:layout_gravity="center_horizontal"
+                            android:orientation="horizontal"/>
+
+                        <com.google.android.material.button.MaterialButton
+                            android:id="@+id/btnReportPlayer"
+                            android:layout_marginTop="@dimen/_4sdp"
+                            style="@style/ButtonStyle_16px"
+                            android:layout_gravity="bottom"
+                            android:layout_marginBottom="@dimen/_10sdp"
+                            android:layout_marginHorizontal="@dimen/_10sdp"
+                            android:text="@string/report_player" />
+
+                    </LinearLayout>
+
+                </androidx.cardview.widget.CardView>
+
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+</RelativeLayout>

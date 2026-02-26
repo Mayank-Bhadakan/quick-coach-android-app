@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/cvCoaches"
+    android:layout_width="@dimen/_130sdp"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="@dimen/_10sdp"
+    app:cardBackgroundColor="@color/colorCardBg"
+    android:layout_marginStart="@dimen/_10sdp"
+    app:cardCornerRadius="@dimen/_10sdp"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_minus5sdp" >
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/imgLevelBg"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/bg_beginner" />
+
+            <com.facebook.drawee.view.SimpleDraweeView
+                android:id="@+id/imgCoach"
+                android:layout_width="@dimen/_50sdp"
+                android:layout_height="@dimen/_50sdp"
+                android:layout_centerHorizontal="true"
+                app:placeholderImage="@drawable/ic_gray_profile"
+                android:layout_marginTop="@dimen/_18sdp"
+                android:layout_marginBottom="@dimen/_6sdp"
+                app:placeholderImageScaleType="fitXY"
+                app:roundedCornerRadius="@dimen/_10sdp"
+                app:roundAsCircle="true" />
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/imgLevel"
+                android:layout_width="@dimen/_20sdp"
+                android:layout_height="@dimen/_20sdp"
+                android:src="@drawable/ic_gold"
+                android:layout_alignEnd="@id/imgCoach"
+                android:layout_alignBottom="@id/imgCoach" />
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/imgLock"
+                android:layout_width="@dimen/_15sdp"
+                android:layout_height="@dimen/_15sdp"
+                android:src="@drawable/ic_lock_gray"
+                android:layout_alignEnd="@id/imgCoach"
+                android:layout_marginTop="@dimen/_15sdp" />
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/imgFavorite"
+                android:layout_width="@dimen/_15sdp"
+                android:layout_height="@dimen/_15sdp"
+                android:src="@drawable/ic_like"
+                android:layout_alignParentEnd="true"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:layout_marginEnd="@dimen/_10sdp"
+                android:visibility="visible" />
+
+        </RelativeLayout>
+        
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/txtGame"
+            style="@style/CapsuleRedBackground"
+            android:layout_width="@dimen/_52sdp"
+            android:layout_height="@dimen/_17sdp"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/_minus10sdp"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:singleLine="false" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/txtCoachName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:fontFamily="@font/yugothib"
+            android:singleLine="false"
+            android:gravity="center"
+            android:textSize="@dimen/_14sdp"
+            android:textStyle="bold" />
+
+        <RatingBar
+            android:id="@+id/ratingBar"
+            style="@style/RatingBarStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:layout_marginBottom="@dimen/_5sdp"
+            android:isIndicator="true" />
+
+        <LinearLayout
+            android:id="@+id/imgMessage"
+            android:layout_width="@dimen/_106sdp"
+            android:layout_height="@dimen/_24sdp"
+            android:background="@drawable/dr_go_chat_icon"
+            android:layout_marginBottom="@dimen/_10sdp"
+            android:visibility="visible"
+            android:layout_gravity="center_horizontal" >
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/_15sdp"
+                android:layout_marginHorizontal="@dimen/_10sdp"
+                android:layout_marginStart="@dimen/_10sdp"
+                android:src="@drawable/ic_gray_message"
+                android:layout_gravity="center"
+                android:visibility="visible" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/font_neue_haas_grotesk_display_pro_75_bold"
+                android:text="@string/go_to_chat"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:layout_marginStart="@dimen/_10sdp"
+                android:textSize="@dimen/_10sdp"
+                android:textColor="#121212" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>

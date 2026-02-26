@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/ic_background_light"
+    android:orientation="vertical"
+    tools:context=".Activity.SignUpActivity">
+    
+    <com.quickcoach.customs.CustomSubHeader
+        android:id="@+id/customSubHeader"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="@dimen/_10sdp" />
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/customSubHeader">
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingHorizontal="@dimen/_15sdp"
+            android:layout_below = "@+id/customSubHeader">
+
+            <androidx.appcompat.widget.AppCompatEditText
+                android:id="@+id/edtLastName"
+                style="@style/EditTextParentStyle"
+                android:fontFamily="@font/yugothib"
+                android:hint="@string/last"
+                android:imeOptions="actionNext"
+                android:inputType="textCapSentences"
+                android:maxLength="20"  />
+
+            <androidx.appcompat.widget.AppCompatEditText
+                android:id="@+id/edtFirstName"
+                style="@style/EditTextParentStyle"
+                android:layout_marginTop="@dimen/_6sdp"
+                android:fontFamily="@font/yugothib"
+                android:hint="@string/first"
+                android:imeOptions="actionNext"
+                android:inputType="textCapSentences"
+                android:maxLength="50" />
+            
+           <RelativeLayout
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:layout_marginBottom="@dimen/_12sdp"
+               android:background="@drawable/dr_edit_text_bg">
+
+               <androidx.appcompat.widget.AppCompatSpinner
+                   android:id="@+id/spLanguage"
+                   style="@style/SpinnerBGStyle"
+                   android:layout_height="@dimen/_45sdp"
+                   android:paddingEnd="@dimen/_5sdp" />
+
+               <androidx.appcompat.widget.AppCompatImageView
+                   android:layout_width="@dimen/_13sdp"
+                   android:layout_height="@dimen/_13sdp"
+                   android:layout_alignParentEnd = "true"
+                   android:layout_centerVertical="true"
+                   android:layout_marginEnd="@dimen/_8sdp"
+                   android:background="@color/colorSubBackground"
+                   android:padding="@dimen/_1sdp"
+                   android:src="@drawable/ic_down_gray" />
+
+           </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/_12sdp"
+                android:background="@drawable/dr_edit_text_bg">
+
+                <androidx.appcompat.widget.AppCompatSpinner
+                    android:id="@+id/spGender"
+                    style="@style/SpinnerBGStyle"
+                    android:layout_height="@dimen/_45sdp"
+                    android:paddingEnd="@dimen/_5sdp" />
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:layout_width="@dimen/_13sdp"
+                    android:layout_height="@dimen/_13sdp"
+                    android:layout_alignParentEnd = "true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginEnd="@dimen/_8sdp"
+                    android:background="@color/colorSubBackground"
+                    android:padding="@dimen/_1sdp"
+                    android:src="@drawable/ic_down_gray" />
+
+            </RelativeLayout>
+
+            <androidx.appcompat.widget.AppCompatEditText
+                    android:id="@+id/edtEmail"
+                style="@style/EditTextParentStyle"
+                android:fontFamily="@font/yugothib"
+                android:hint="@string/email_star"
+                android:imeOptions="actionNext"
+                android:inputType="textEmailAddress"
+                android:maxLength="100"/>
+
+            <androidx.appcompat.widget.AppCompatEditText
+                android:id="@+id/edtPassword"
+                style="@style/EditTextParentStyle"
+                android:fontFamily="@font/yugothib"
+                android:hint="@string/password_star"
+                android:imeOptions="actionDone"
+                android:inputType="textPassword"
+                android:maxLength="20" />
+            
+            <androidx.appcompat.widget.AppCompatTextView
+                style="@style/Text12BoldWhiteStyle"
+                android:layout_marginBottom="@dimen/_10sdp"
+                android:singleLine="false"
+                android:text="@string/have_referral_code" />
+
+            <androidx.appcompat.widget.AppCompatEditText
+                android:id="@+id/edtReferral"
+                style="@style/EditTextParentStyle"
+                android:fontFamily="@font/yugothib"
+                android:imeOptions="actionDone"
+                android:inputType="text"
+                android:maxLength="20" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/txtTerms"
+                style="@style/Text12RegularGrayStyle"
+                android:gravity="center"
+                android:singleLine="false"
+                android:text="@string/by_signing_up_you_agree_to_our_team_of_use_and_privacy_notice"
+                android:textColor="@color/black" />
+
+<!--            SingUp-->
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/btnSignUp"
+                    style="@style/ButtonStyle_16px"
+                    android:layout_marginHorizontal="@dimen/_30sdp"
+                    android:layout_marginBottom="@dimen/_10sdp"
+                    android:fontFamily="@font/yugothib"
+                    android:text="@string/btnContinue"
+                    android:textStyle="bold" />
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+    </androidx.core.widget.NestedScrollView>
+
+</RelativeLayout>

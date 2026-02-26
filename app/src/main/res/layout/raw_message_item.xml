@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:id="@+id/llMessage"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="@dimen/_10sdp">
+
+    <RelativeLayout
+        android:id="@+id/rlEventTab"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/_20sdp">
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cvMessage"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_60sdp"
+            android:elevation="@dimen/_10sdp"
+            app:cardCornerRadius="@dimen/_5sdp"
+            app:cardUseCompatPadding="true" >
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="@dimen/_20sdp"
+                android:layout_marginVertical="@dimen/_3sdp">
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/txtMsgName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/_10sdp"
+                    android:text="@string/daniel_atkins"
+                    android:fontFamily="@font/yugothib"
+                    android:textSize="@dimen/_14sdp"
+                    android:textStyle="bold"
+                    android:textColor="#121212" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/txtMessage"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/txtMsgName"
+                    android:text="@string/the_weather_will_be_perfect_for_the_sat"
+                    android:layout_marginStart="@dimen/_10sdp"
+                    android:fontFamily="@font/yugothib"
+                    android:singleLine="true"
+                    android:textSize="@dimen/_10sdp"
+                    android:textColor="#121212" />
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:id="@+id/btnDelete"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_delete_red"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentBottom="true"
+                    android:visibility="gone" />
+
+            </RelativeLayout>
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/txtMsgTime"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="end"
+                android:text="@string/time"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:layout_marginRight="@dimen/_10sdp"
+                android:fontFamily="@font/yugothib"
+                android:textColor="#4b4b4b"
+                android:textSize="@dimen/_10sdp" />
+
+        </androidx.cardview.widget.CardView>
+
+    </RelativeLayout>
+    
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:layout_marginStart="@dimen/_10sdp">
+
+        <com.facebook.drawee.view.SimpleDraweeView
+            android:id="@+id/imgProfile"
+            android:layout_width="@dimen/_40sdp"
+            android:layout_height="@dimen/_40sdp"
+            app:actualImageResource="@drawable/ic_dummy_icon"
+            android:layout_centerVertical="true"
+            app:roundAsCircle="true"
+            app:roundingBorderWidth="@dimen/_3sdp"
+            app:roundingBorderColor="@color/colorSubBackground" />
+
+        <RelativeLayout
+            android:id="@+id/imgMsg"
+            android:layout_width="@dimen/_10sdp"
+            android:layout_height="@dimen/_10sdp"
+            android:background="@drawable/message_count"
+            android:layout_alignEnd="@id/imgProfile"
+            android:layout_alignBottom="@id/imgProfile"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:visibility="visible" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/lblCountNumber"
+            android:layout_width="@dimen/_5sdp"
+            android:layout_height="@dimen/_5sdp"
+            android:layout_centerInParent="true"
+            android:text="1"
+            android:fontFamily="@font/font_shapiro_heavy"
+            android:gravity="center"
+            android:textColor="#ffffff"
+            android:textSize="@dimen/_5sdp" />
+
+    </RelativeLayout>
+
+</RelativeLayout>
